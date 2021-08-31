@@ -1,0 +1,12 @@
+/** BASE **/
+@use 'base/base.scss';
+
+/** FONTS **/
+@use 'base/typography.scss';
+
+/** LAYOUT **/
+@use 'layout/header.scss';
+@use 'layout/footer.scss';
+
+/** COMPONENTS **/
+@use 'components/sections.scss';
