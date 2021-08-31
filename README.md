@@ -20,4 +20,4 @@ To watch and compile when saving run:
 
 `sass --watch scss/style.scss css/style.css`
 
-þetta er vala
+þetta er vala, og þetta er Tinna.
