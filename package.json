@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/Bryndis-vefari/Winestory/issues"
   },
-  "homepage": "https://github.com/Bryndis-vefari/Winestory#readme"
+  "homepage": "https://github.com/Bryndis-vefari/Winestory#readme",
+  "dependencies": {
+    "modern-normalize": "^1.1.0"
+  }
 }
