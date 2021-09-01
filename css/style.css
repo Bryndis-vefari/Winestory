@@ -1,4 +1,4 @@
-@import "/node_modules/modern-normalize/modern-normalize.css";
+@import '/node_modules/modern-normalize/modern-normalize.css';
 /* FONTS */
 @font-face {
   font-family: "ObjectSans-Thin";
@@ -44,20 +44,75 @@
 /** BASE STYLES **/
 html {
   width: 100vw;
+  max-width: 100%;
   height: 100%;
   min-height: 100vh;
+  font-size: 16px;
 }
 
 body {
   width: 100%;
-  max-width: 1440px;
+  max-width: 1920px;
   margin: 0 auto;
 }
 
+img {
+  width: 100%;
+  max-width: 100%;
+}
+
 /* TYPOGRAPHY */
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  padding: 0;
+}
+
 h1 {
-  font-family: "ObjectSans-Bold";
-  font-size: 288px;
+  color: #fff;
+  font-size: 113px;
+}
+@media screen and (min-width: 320px) {
+  h1 {
+    font-size: calc(113px + (600 - 113) * ((100vw - 320px) / (1920 - 320)));
+  }
+}
+@media screen and (min-width: 1920px) {
+  h1 {
+    font-size: 600px;
+  }
+}
+
+/* Anchor styles */
+a {
+  text-decoration: none;
+  color: #000;
+  transition: all 0.3s;
+  position: relative;
+}
+
+a.line-hover {
+  display: block;
+  color: #222222;
+  text-decoration: none;
+  z-index: 1;
+}
+a.line-hover:before {
+  content: "";
+  position: absolute;
+  background-color: #ee6c6c;
+  z-index: -1;
+  width: 0;
+  height: 50%;
+  left: 0;
+  bottom: 0;
+  opacity: 1;
+  transition: all 0.3s;
+}
+a.line-hover:hover:before, a.line-hover:focus:before {
+  width: 100%;
 }
 
 /* ICONS */
@@ -142,6 +197,7 @@ h1 {
   align-items: center;
   justify-content: space-between;
   width: 100%;
+  height: 6rem;
 }
 .header__nav li {
   display: inline-block;
@@ -153,16 +209,25 @@ h1 {
 
 /* FOOTER */
 /* SECTIONS */
-section .container {
+section {
+  position: relative;
+}
+section.container {
   margin: 3rem;
 }
-section .hero {
-  background-image: url("/assets/images/hero.jpg");
+section.hero {
+  height: 100vh;
+  background-image: url("/assets/images/hero_image.jpg");
   background-color: #cccccc;
-  height: 500px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+}
+section.hero h1 {
+  position: absolute;
+  bottom: 0;
+  right: -1.2rem;
+  line-height: 0.75;
 }
 
 /*# sourceMappingURL=style.css.map */

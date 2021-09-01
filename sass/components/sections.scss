@@ -1,15 +1,25 @@
 /* SECTIONS */
 section {
-  .container {
+  position: relative;
+
+  &.container {
     margin: 3rem;
   }
 
-  .hero {
-    background-image: url("/assets/images/hero.jpg");
+  &.hero {
+    height: 100vh;
+    background-image: url("/assets/images/hero_image.jpg");
     background-color: #cccccc;
-    height: 500px;
+
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
+
+    h1 {
+      position: absolute;
+      bottom: 0;
+      right: -1.2rem;
+      line-height: 0.75;
+    }
   }
 }
