@@ -1,17 +1,12 @@
-/** FONTS **/
-@use 'base/fonts.scss';
+@import '/node_modules/modern-normalize/modern-normalize.css';
 
-/** BASE **/
-@use 'base/base.scss';
+@import 'base/fonts.scss';
+@import 'base/base.scss';
+@import 'base/typography.scss';
+@import 'base/icons.scss';
 
-/** TYPOGRAPHY **/
-@use 'base/typography.scss';
-@use 'base/icons.scss';
+@import 'layout/header.scss';
+@import 'layout/footer.scss';
 
-/** LAYOUT **/
-@use 'layout/header.scss';
-@use 'layout/footer.scss';
-
-/** COMPONENTS **/
-@use 'components/sections.scss';
-@use 'components/marquee.scss';
+@import 'components/marquee.scss';
+@import 'components/sections.scss';
