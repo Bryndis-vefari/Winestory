@@ -1,0 +1,21 @@
+.btn {
+  display: inline-block;
+  margin: 4px 2px;
+  padding: 15px 32px;
+  color: $font-color_primary;
+  font-size: 16px;
+  text-decoration: none;
+  text-align: center;
+  border: 2px solid $background-color_secondary;
+  cursor: pointer;
+
+  &--outline {
+    background-color: $background-color_primary;
+    color: $font-color_primary;
+  }
+
+  &--solid {
+    background-color: $background-color_secondary;
+    color: $font-color_secondary;
+  }
+}

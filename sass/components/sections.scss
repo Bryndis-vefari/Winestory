@@ -10,7 +10,6 @@ section {
     height: 100vh;
     background-image: url("/assets/images/hero_image.jpg");
     background-color: #cccccc;
-
     background-position: center;
     background-repeat: no-repeat;
     background-size: cover;
@@ -18,8 +17,8 @@ section {
     h1 {
       position: absolute;
       bottom: 0;
-      right: -1.2rem;
-      line-height: 0.75;
+      right: 0;
+      line-height: 0.5;
     }
   }
 }

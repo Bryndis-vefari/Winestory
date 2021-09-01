@@ -1,14 +1,15 @@
 /* TYPOGRAPHY */
+/* Heading styles */
 h1,
 h2,
 h3,
 h4 {
+  font-family: "ObjectSans-Bold";
   margin: 0;
   padding: 0;
 }
 
 h1 {
-  font-family: 'ObjectSans-Bold';
   color: #fff;
   font-size: 113px;
 
@@ -21,14 +22,36 @@ h1 {
 }
 
 h2 {
+  font-size: 40px;
+
+  @media screen and (min-width: 320px) {
+    font-size: calc(40px + (50 - 40) * ((100vw - 320px) / (1920 - 320)));
+  }
+  @media screen and (min-width: 1920px) {
+    font-size: 50px;
+  }
+}
+
+/* Paragraph styles */
+p {
+  font-family: "ObjectSans-Regular";
+  font-size: 14px;
+
+  @media screen and (min-width: 320px) {
+    font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320)));
+  }
+  @media screen and (min-width: 1920px) {
+    font-size: 16px;
+  }
 }
 
 /* Anchor styles */
 a {
-  text-decoration: none;
-  color: #000;
-  transition: all 0.3s;
   position: relative;
+  padding: 10px 5px;
+  color: #000;
+  text-decoration: none;
+  transition: all 0.3s;
 }
 
 a.line-hover {
@@ -38,12 +61,12 @@ a.line-hover {
   z-index: 1;
 
   &:before {
-    content: '';
+    content: "";
     position: absolute;
-    background-color: $color-accent;
+    background-color: $accent-color;
     z-index: -1;
-    width: 0;
-    height: 50%;
+    width: 100%;
+    height: 0;
     left: 0;
     bottom: 0;
     opacity: 1;
@@ -53,7 +76,7 @@ a.line-hover {
   &:hover,
   &:focus {
     &:before {
-      width: 100%;
+      height: 75%;
     }
   }
 }
