@@ -1,0 +1,17 @@
+.header {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  width: 100%;
+  &__nav {
+    li {
+      display: inline-block;
+    }
+  }
+
+  &__btns {
+    display: inline-block;
+    justify-self: flex-end;
+  }
+}
