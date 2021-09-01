@@ -1,3 +1,7 @@
+body {
+  padding: 40px;
+}
+
 @font-face {
   font-family: "icomoon";
   src: url("/assets/fonts/icon-fonts/icomoon.eot?lpuwsi");
@@ -10,7 +14,6 @@
 [class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
   font-family: "icomoon" !important;
-  speak: never;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
