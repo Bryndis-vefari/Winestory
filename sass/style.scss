@@ -1,8 +1,12 @@
+/** FONTS **/
+@use 'base/fonts.scss';
+
 /** BASE **/
 @use 'base/base.scss';
 
-/** FONTS **/
+/** TYPOGRAPHY **/
 @use 'base/typography.scss';
+@use 'base/icons.scss';
 
 /** LAYOUT **/
 @use 'layout/header.scss';

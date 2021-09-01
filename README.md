@@ -1,3 +1,4 @@
+<!-- prettier-ignore -->
 # Winestory
 
 ### Clone pjoject
@@ -22,3 +23,5 @@ To watch and compile when saving run:
 ## Icomoon fonts
 
 [icomoon.io](https://icomoon.io/app)
+
+When adding to icon fonts import **selection.js** file to icommon app and remember to replace selection.js file with new one.
