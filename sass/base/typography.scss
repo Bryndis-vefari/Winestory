@@ -1,5 +1,59 @@
 /* TYPOGRAPHY */
+h1,
+h2,
+h3,
+h4 {
+  margin: 0;
+  padding: 0;
+}
+
 h1 {
   font-family: 'ObjectSans-Bold';
-  font-size: 288px;
+  color: #fff;
+  font-size: 113px;
+
+  @media screen and (min-width: 320px) {
+    font-size: calc(113px + (600 - 113) * ((100vw - 320px) / (1920 - 320)));
+  }
+  @media screen and (min-width: 1920px) {
+    font-size: 600px;
+  }
+}
+
+h2 {
+}
+
+/* Anchor styles */
+a {
+  text-decoration: none;
+  color: #000;
+  transition: all 0.3s;
+  position: relative;
+}
+
+a.line-hover {
+  display: block;
+  color: rgb(34, 34, 34);
+  text-decoration: none;
+  z-index: 1;
+
+  &:before {
+    content: '';
+    position: absolute;
+    background-color: $color-accent;
+    z-index: -1;
+    width: 0;
+    height: 50%;
+    left: 0;
+    bottom: 0;
+    opacity: 1;
+    transition: all 0.3s;
+  }
+
+  &:hover,
+  &:focus {
+    &:before {
+      width: 100%;
+    }
+  }
 }
