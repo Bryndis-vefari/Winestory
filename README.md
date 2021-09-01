@@ -19,3 +19,4 @@ To compile sass to css run:
 To watch and compile when saving run:
 
 `sass --watch scss/style.scss css/style.css`
+
