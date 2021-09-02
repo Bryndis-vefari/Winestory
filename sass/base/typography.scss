@@ -32,16 +32,28 @@ h2 {
   }
 }
 
+h3 {
+  font-size: 64px;
+
+  @media screen and (min-width: 320px) {
+    font-size: calc(64px + (160 - 64) * ((100vw - 320px) / (1920 - 320)));
+  }
+  @media screen and (min-width: 1920px) {
+    font-size: 160px;
+  }
+}
+
 /* Paragraph styles */
 p {
   font-family: 'ObjectSans-Regular';
-  font-size: 14px;
+  font-size: 16px;
+  line-height: 1.6;
 
   @media screen and (min-width: 320px) {
-    font-size: calc(14px + (16 - 14) * ((100vw - 320px) / (1920 - 320)));
+    font-size: calc(16px + (20 - 16) * ((100vw - 320px) / (1920 - 320)));
   }
   @media screen and (min-width: 1920px) {
-    font-size: 16px;
+    font-size: 20px;
   }
 }
 

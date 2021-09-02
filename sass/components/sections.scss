@@ -6,7 +6,7 @@
   align-items: flex-end;
   height: 100vh;
   width: 100%;
-  background-image: url("/assets/images/hero_image.jpg");
+  background-image: url('/assets/images/hero_image.jpg');
   background-color: #cccccc;
   background-position: center;
   background-repeat: no-repeat;
@@ -21,16 +21,17 @@
       top: 50%;
       left: 10%;
       font-size: 80px;
-      font-family: "ObjectSans-Regular";
+      font-family: 'ObjectSans-Regular';
     }
   }
 }
 
 .container {
-  padding: 5rem 2rem;
+  padding: 5rem 0;
 }
 
 .headline-block {
+  text-align: center;
 }
 
 .article-blocks {
@@ -39,22 +40,27 @@
 
   &__item {
     display: flex;
-    flex-wrap: nowrap;
+    flex-wrap: wrap;
+    padding: 6rem 0;
+
+    &.item--1 {
+      flex: max(200px, 100%/3 - 20px);
+    }
+
+    &.item--2 {
+      flex-direction: row-reverse;
+    }
+
+    &.item--3 {
+      flex-direction: column-reverse;
+    }
+
+    @media screen and (min-width: 1920px) {
+    }
 
     &__text {
-      width: 50%;
     }
     &__img {
-      width: 50%;
-    }
-
-    &.reverse {
-      .article-blocks__item__img {
-        order: 1;
-      }
-      .article-blocks__item__text {
-        order: 2;
-      }
     }
   }
 
@@ -85,7 +91,6 @@
     transition: all 0.2s ease;
   }
   h3 {
-    font-size: 120px;
     text-transform: uppercase;
     display: inline-block;
     transition: all 0.2s ease;

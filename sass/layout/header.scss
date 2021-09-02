@@ -7,7 +7,7 @@
   justify-content: space-between;
   width: 100%;
   height: 6rem;
-  padding: 0 15px;
+  padding: 0 16px;
   background: $background-color_primary;
   box-shadow: 0 -2px 16px #e0e0e0;
   z-index: 99;
@@ -37,7 +37,7 @@
       z-index: 1;
 
       &:before {
-        content: "";
+        content: '';
         position: absolute;
         background-color: $accent-color;
         z-index: -1;
@@ -63,12 +63,22 @@
     justify-self: flex-end;
   }
 
+  &__nav,
+  &__btns {
+    display: none;
+    @media screen and (min-width: 1025px) {
+      display: inline-block;
+    }
+  }
+
   .social {
     position: fixed;
     left: 0;
     top: 50%;
     transform: translateY(-50%);
     z-index: 99;
+    display: none;
+    visibility: hidden;
 
     ul {
       margin: 0;
