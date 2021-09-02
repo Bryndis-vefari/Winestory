@@ -8,7 +8,7 @@ section {
 
   &.hero {
     height: 100vh;
-    background-image: url('/assets/images/hero_image.jpg');
+    background-image: url("/assets/images/hero_image.jpg");
     background-color: #cccccc;
     background-position: center;
     background-repeat: no-repeat;
@@ -20,5 +20,32 @@ section {
       right: 0;
       line-height: 0.5;
     }
+  }
+
+  .marquee {
+    max-width: 100%;
+    // overflow: hidden;
+    &__inner {
+      white-space: nowrap;
+      overflow: hidden;
+      display: inline-block;
+      // animation: marquee 80s linear infinite;
+      transition: all 0.2s ease;
+    }
+    h3 {
+      font-size: 120px;
+      text-transform: uppercase;
+      display: inline-block;
+      transition: all 0.2s ease;
+    }
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
   }
 }

@@ -28,6 +28,34 @@
       display: inline-block;
       margin: 5px;
     }
+
+    a {
+      display: block;
+      color: rgb(34, 34, 34);
+      line-height: 1;
+      text-decoration: none;
+      z-index: 1;
+
+      &:before {
+        content: "";
+        position: absolute;
+        background-color: $accent-color;
+        z-index: -1;
+        width: 0;
+        height: 55%;
+        left: 0;
+        bottom: 0;
+        opacity: 1;
+        transition: all 0.3s;
+      }
+
+      &:hover,
+      &:focus {
+        &:before {
+          width: 100%;
+        }
+      }
+    }
   }
 
   &__btns {

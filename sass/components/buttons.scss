@@ -18,4 +18,16 @@
     background-color: $background-color_secondary;
     color: $font-color_secondary;
   }
+
+  &:hover {
+    &.btn--outline {
+      background-color: $accent-color;
+      color: $font-color_secondary;
+    }
+
+    &.btn--solid {
+      background-color: $accent-color;
+      color: $font-color_primary;
+    }
+  }
 }
