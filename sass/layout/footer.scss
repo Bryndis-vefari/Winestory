@@ -25,6 +25,9 @@
 
   &__left {
     justify-content: flex-end;
+    .logo a {
+      padding: 0;
+    }
   }
 
   &__right {
