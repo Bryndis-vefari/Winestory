@@ -21,6 +21,19 @@ h1 {
 }
 
 h2 {
+  font-family: 'ObjectSans-Regular';
+  font-size: 3rem;
+}
+
+/* Paragraph styles */
+p {
+  font-family: 'ObjectSans-Regular';
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+p.large {
+  font-size: 32px;
 }
 
 /* Anchor styles */

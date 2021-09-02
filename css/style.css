@@ -1,4 +1,4 @@
-@import "/node_modules/modern-normalize/modern-normalize.css";
+@import '/node_modules/modern-normalize/modern-normalize.css';
 /* FONTS */
 @font-face {
   font-family: "ObjectSans-Thin";
@@ -9,7 +9,7 @@
   font-display: swap;
 }
 @font-face {
-  font-family: "/assets/fonts/object-sans/ObjectSans-Regular";
+  font-family: "ObjectSans-Regular";
   src: url("/assets/fonts/object-sans/ObjectSans-Regular.eot");
   src: url("/assets/fonts/object-sans/ObjectSans-Regular.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/object-sans/ObjectSans-Regular.woff2") format("woff2"), url("/assets/fonts/object-sans/ObjectSans-Regular.woff") format("woff"), url("/assets/fonts/object-sans/ObjectSans-Regular.ttf") format("truetype"), url("/assets/fonts/object-sans/ObjectSans-Regular.svg#ObjectSans-Regular") format("svg");
   font-weight: normal;
@@ -17,7 +17,7 @@
   font-display: swap;
 }
 @font-face {
-  font-family: "/assets/fonts/object-sans/ObjectSans-Bold";
+  font-family: "ObjectSans-Bold";
   src: url("/assets/fonts/object-sans/ObjectSans-Bold.eot");
   src: url("/assets/fonts/object-sans/ObjectSans-Bold.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/object-sans/ObjectSans-Bold.woff2") format("woff2"), url("/assets/fonts/object-sans/ObjectSans-Bold.woff") format("woff"), url("/assets/fonts/object-sans/ObjectSans-Bold.ttf") format("truetype"), url("/assets/fonts/object-sans/ObjectSans-Bold.svg#ObjectSans-Bold") format("svg");
   font-weight: normal;
@@ -25,7 +25,7 @@
   font-display: swap;
 }
 @font-face {
-  font-family: "/assets/fonts/object-sans/ObjectSans-Heavy";
+  font-family: "ObjectSans-Heavy";
   src: url("/assets/fonts/object-sans/ObjectSans-Heavy.eot");
   src: url("/assets/fonts/object-sans/ObjectSans-Heavy.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/object-sans/ObjectSans-Heavy.woff2") format("woff2"), url("/assets/fonts/object-sans/ObjectSans-Heavy.woff") format("woff"), url("/assets/fonts/object-sans/ObjectSans-Heavy.ttf") format("truetype"), url("/assets/fonts/object-sans/ObjectSans-Heavy.svg#ObjectSans-Heavy") format("svg");
   font-weight: normal;
@@ -71,6 +71,7 @@ h4 {
 }
 
 h1 {
+  font-family: "ObjectSans-Bold";
   color: #fff;
   font-size: 113px;
 }
@@ -83,6 +84,22 @@ h1 {
   h1 {
     font-size: 600px;
   }
+}
+
+h2 {
+  font-family: "ObjectSans-Regular";
+  font-size: 3rem;
+}
+
+/* Paragraph styles */
+p {
+  font-family: "ObjectSans-Regular";
+  font-size: 1rem;
+  line-height: 1.6;
+}
+
+p.large {
+  font-size: 32px;
 }
 
 /* Anchor styles */
@@ -208,68 +225,9 @@ a.line-hover:hover:before, a.line-hover:focus:before {
 }
 
 /* FOOTER */
-.marquee {
-  position: relative;
-  width: 100%;
-  font-size: 160px;
-  text-transform: uppercase;
-  white-space: nowrap;
-  color: red;
-  overflow: hidden;
-}
-.marquee h3 {
-  display: block;
-  width: 100%;
-  height: 100%;
-  position: relative;
-  animation: marquee 8s linear infinite;
-  animation-play-state: paused;
-  will-change: transform;
-}
-.marquee h3:hover {
-  animation-play-state: paused;
-}
-
-/*.marquee {
-  font-size: 120px;
-  height: 100%;
-  width: 100%;
-  overflow: hidden;
-
-  position: relative;
-  animation: marqueeL 5s linear infinite;
-  animation-play-state: running
-}*/
-@keyframes marquee {
-  0% {
-    transform: translateX(0%);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
-@keyframes marqueeL {
-  0% {
-    transform: translateX(0%);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
-@keyframes marqueeR {
-  0% {
-    transform: translateX(0%);
-  }
-  100% {
-    transform: translateX(-100%);
-  }
-}
 /* SECTIONS */
 section {
   position: relative;
-}
-section.container {
-  margin: 3rem;
 }
 section.hero {
   height: 100vh;
@@ -284,6 +242,92 @@ section.hero h1 {
   bottom: 0;
   right: -1.2rem;
   line-height: 0.75;
+}
+section .headline-block {
+  position: relative;
+  margin: 0 auto;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+section .headline-block h2 {
+  margin-bottom: 2rem;
+  text-transform: lowercase;
+}
+
+.article-block {
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin: 10rem 0;
+}
+.article-block__item {
+  position: relative;
+  height: 100%;
+  min-height: 600px;
+  padding: 6rem 0;
+  max-width: 1200px;
+}
+.article-block__text {
+  display: flex;
+  flex-direction: column;
+}
+.article-block__text p {
+  z-index: 5;
+}
+.article-block__marquee {
+  z-index: 4;
+  position: relative;
+  width: 100%;
+  font-size: 10rem;
+  text-transform: uppercase;
+  white-space: nowrap;
+  overflow: hidden;
+}
+.article-block__item--2 {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+}
+.article-block__item--2 .article-block__wrap {
+  display: flex;
+  width: 100%;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0 auto;
+  max-width: 1200px;
+}
+.article-block__item--2 .article-block__wrap .article-block__img {
+  display: block;
+  flex: 50%;
+  max-width: 560px;
+  min-width: 280px;
+}
+.article-block__item--2 .article-block__wrap p {
+  font-size: 20px;
+  flex: 40%;
+  max-width: 480px;
+  align-self: center;
+}
+.article-block__item--2 .article-block__marquee {
+  position: relative;
+  width: 100%;
+  font-size: 160px;
+  text-transform: uppercase;
+  white-space: nowrap;
+  color: #000;
+  overflow: hidden;
+}
+.article-block__item--2 .article-block__marquee h3 {
+  position: relative;
+  animation: marquee 8s linear infinite;
+  animation-play-state: running;
+  will-change: transform;
 }
 
 /*# sourceMappingURL=style.css.map */
