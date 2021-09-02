@@ -1,41 +1,60 @@
 /* SECTIONS */
-section {
+.hero {
   position: relative;
+  display: flex;
+  justify-content: flex-end;
+  align-items: flex-end;
+  height: 100vh;
+  width: 100%;
+  background-image: url("/assets/images/hero_image.jpg");
+  background-color: #cccccc;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
 
-  &.container {
-  }
+  h1 {
+    text-align: right;
+    line-height: 0.5;
 
-  &.hero {
-    height: 100vh;
-    background-image: url('/assets/images/hero_image.jpg');
-    background-color: #cccccc;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-size: cover;
-
-    h1 {
+    span {
       position: absolute;
-      bottom: 0;
-      right: 0;
-      line-height: 0.5;
+      top: 50%;
+      left: 10%;
+      font-size: 80px;
+      font-family: "ObjectSans-Regular";
     }
   }
+}
 
-  .marquee {
-    max-width: 100%;
-    // overflow: hidden;
-    &__inner {
-      white-space: nowrap;
-      overflow: hidden;
-      display: inline-block;
-      // animation: marquee 80s linear infinite;
-      transition: all 0.2s ease;
+.container {
+  padding: 5rem 2rem;
+}
+
+.headline-block {
+}
+
+.article-blocks {
+  display: flex;
+  flex-direction: column;
+
+  &__item {
+    display: flex;
+    flex-wrap: nowrap;
+
+    &__text {
+      width: 50%;
     }
-    h3 {
-      font-size: 120px;
-      text-transform: uppercase;
-      display: inline-block;
-      transition: all 0.2s ease;
+    &__img {
+      width: 50%;
+    }
+
+    &.reverse {
+      .article-blocks__item__img {
+        order: 1;
+      }
+      .article-blocks__item__text {
+        order: 2;
+      }
     }
   }
 
@@ -52,6 +71,24 @@ section {
       margin-bottom: 2rem;
       text-transform: lowercase;
     }
+  }
+}
+
+.marquee {
+  max-width: 100%;
+  // overflow: hidden;
+  &__inner {
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    // animation: marquee 80s linear infinite;
+    transition: all 0.2s ease;
+  }
+  h3 {
+    font-size: 120px;
+    text-transform: uppercase;
+    display: inline-block;
+    transition: all 0.2s ease;
   }
 }
 
