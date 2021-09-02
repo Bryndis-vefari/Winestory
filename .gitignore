@@ -1,2 +1,8 @@
-# Node modules
+# OS generated files #
+######################
+.DS_Store
+.DS_Store?
+
+# Node Modules #
+######################
 node-modules
