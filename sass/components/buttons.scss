@@ -19,6 +19,11 @@
     color: $font-color_secondary;
   }
 
+  &--accent {
+    background-color: $accent-color;
+    color: $black;
+  }
+
   &:hover {
     &.btn--outline {
       background-color: $gray;

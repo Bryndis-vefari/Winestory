@@ -1,4 +1,4 @@
-@import "../Variables/variables.scss";
+@import '../Variables/variables.scss';
 
 /** BASE STYLES **/
 *,
@@ -31,7 +31,7 @@ body {
   width: 100%;
   max-width: 1920px;
   margin: 0 auto;
-  padding: 0 16px;
+  padding: 0 1rem;
 
   @media screen and (min-width: 320px) {
     padding: 0 calc(16px + (120 - 16) * ((100vw - 320px) / (1920 - 320)));
