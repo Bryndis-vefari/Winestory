@@ -1,13 +1,10 @@
 /* FOOTER */
 .footer {
+  background-color: $gray;
   display: flex;
   flex-wrap: nowrap;
   height: 651px;
   padding: 0 15px;
-  background-image: url("/assets/images/footer-image.jpg");
-  background-position: top left;
-  background-repeat: no-repeat;
-  background-size: cover;
 
   @media screen and (min-width: 320px) {
     padding: 0 calc(15px + (40 - 15) * ((100vw - 320px) / (1920 - 320)));
@@ -25,6 +22,39 @@
 
   &__left {
     justify-content: flex-end;
+
+    .social {
+      position: fixed;
+      left: 0;
+      top: 50%;
+      transform: translateY(-50%);
+      z-index: 99;
+      display: none;
+      visibility: hidden;
+
+      ul {
+        margin: 0;
+        padding: 0;
+      }
+
+      li {
+        padding: 7px 10px;
+
+        a {
+          color: $accent-color;
+          list-style-type: none;
+
+          &:before {
+            font-size: 2.2rem;
+          }
+
+          &:hover {
+            color: darken($accent-color, 15%);
+          }
+        }
+      }
+    }
+
     .logo a {
       padding: 0;
     }
