@@ -5,6 +5,7 @@
   flex-wrap: nowrap;
   height: 651px;
   padding: 0 15px;
+  margin-top: 3em;
 
   @media screen and (min-width: 320px) {
     padding: 0 calc(15px + (40 - 15) * ((100vw - 320px) / (1920 - 320)));
@@ -31,7 +32,7 @@
 
   p {
     color: $white;
-    padding-bottom: 2rem;
+    padding-right: 8rem;;
   
     span {
         font-family: $font-light;
@@ -82,18 +83,19 @@
   }
 
   &__right {
+
   display: flex;
   flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  padding: 4rem 0 5rem;
+  justify-content:center;
+  align-items:flex-start;
+  padding: 6rem 0rem 5rem;
 
 
 
     .textbox {
       display: inline-block;
       margin: 4px 2px;
-      padding: 15px 32px;
+      padding: 15px 60px;
       color: $font-color_primary;
       font-size: 16px;
     }
