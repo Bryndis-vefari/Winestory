@@ -10,7 +10,7 @@
 </head>
 
 <body>
-	<header class='header'>
+	<header class="header">
 		<div class="logo header__logo">
 			<a href="/">
 				<svg width="246" height="50" viewBox="0 0 246 50" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -20,28 +20,26 @@
 				</svg>
 			</a>
 		</div>
-		<nav class="header__nav">
-			<ul>
-				<li><a class="line-hover" href="#">What we do</a></li>
-				<li><a class="line-hover" href="#">How it works</a></li>
-				<li><a class="line-hover" href="#">Reviews</a></li>
+
+		<button type="button" class="burger" id="burger">
+			<span class="burger-line"></span>
+			<span class="burger-line"></span>
+			<span class="burger-line"></span>
+			<span class="burger-line"></span>
+		</button>
+
+		<nav class="header__menu menu" id="menu">
+			<ul class="header__menu__inner menu-inner">
+				<li class="header__menu__item menu-item"><a href="#" class="nav-item menu-link active">What we do</a></li>
+				<li class="header__menu__item menu-item"><a href="#" class="nav-item menu-link">How it works</a></li>
+				<li class="header__menu__item menu-item"><a href="#" class="nav-item menu-link">Reviews</a></li>
+				<li class="header__menu__item menu-item"><a href="#" class="btn btn--outline menu-link">log in</a></li>
+				<li class="header__menu__item menu-item"><a href="#" class="btn btn--solid menu-link">get started</a></li>
 			</ul>
 		</nav>
-		<div class='header__btns'>
-			<a class='btn btn--outline' href="#">log in</a>
-			<a class='btn btn--solid' href="#">get started</a>
-		</div>
-		<div class="social">
-			<ul>
-				<li><a class="icon-facebook_social-media_icon" href="#"></a></li>
-				<li><a class="icon-intsagram_social-media_icon" href="#"></a></li>
-				<li><a class="icon-social-media_twitter_icon" href="#"></a></li>
-			</ul>
-		</div>
 	</header>
 
 	<main>
-
 		<section class="hero">
 			<h1><span>Tailor your taste in </span>wine.</h1>
 		</section>
@@ -113,6 +111,13 @@
 	</main>
 	<footer class="footer">
 		<div class="footer__left">
+			<div class="social">
+				<ul>
+					<li><a class="icon-facebook_social-media_icon" href="#"></a></li>
+					<li><a class="icon-intsagram_social-media_icon" href="#"></a></li>
+					<li><a class="icon-social-media_twitter_icon" href="#"></a></li>
+				</ul>
+			</div>
 			<div class="logo header__logo">
 				<a href="/">
 					<svg width="246" height="50" viewBox="0 0 246 50" fill="none" xmlns="http://www.w3.org/2000/svg">
@@ -132,6 +137,8 @@
 		</div>
 		</div>
 	</footer>
-</body>
 
+	<script src="/js/scripts.js" type="text/javascript"></script>
+
+</body>
 </html>
