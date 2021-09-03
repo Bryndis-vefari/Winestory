@@ -4,7 +4,7 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: 'ObjectSans-Bold';
+  font-family: $font-bold;
   margin: 0;
   padding: 0;
 }
@@ -23,7 +23,7 @@ h1 {
 
 h2 {
   font-size: 28px;
-  line-height: 1.4;
+  line-height: 1.2;
 
   @media screen and (min-width: 320px) {
     font-size: calc(28px + (80 - 28) * ((100vw - 320px) / (1920 - 320)));
@@ -46,7 +46,7 @@ h3 {
 
 /* Paragraph styles */
 p {
-  font-family: 'ObjectSans-Regular';
+  font-family: $font-regular;
   font-size: 16px;
   line-height: 1.6;
 
