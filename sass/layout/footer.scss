@@ -20,6 +20,24 @@
     width: 50%;
   }
 
+  h2 {
+    color: $white;
+    padding-bottom: 2rem;
+
+    span {
+      font-family: $font-light;
+    }
+  }
+
+  p {
+    color: $white;
+    padding-bottom: 2rem;
+  
+    span {
+        font-family: $font-light;
+    }
+  }
+
   &__left {
     justify-content: flex-end;
 
@@ -55,12 +73,32 @@
       }
     }
 
+
+
+
     .logo a {
       padding: 0;
     }
   }
 
   &__right {
-    justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 4rem 0 5rem;
+
+
+
+    .textbox {
+      display: inline-block;
+      margin: 4px 2px;
+      padding: 15px 32px;
+      color: $font-color_primary;
+      font-size: 16px;
+    }
+  
+    
+
   }
 }

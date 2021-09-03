@@ -413,6 +413,20 @@ a {
   flex-direction: column;
   width: 50%;
 }
+.footer h2 {
+  color: white;
+  padding-bottom: 2rem;
+}
+.footer h2 span {
+  font-family: "ObjectSans-Thin";
+}
+.footer p {
+  color: white;
+  padding-bottom: 2rem;
+}
+.footer p span {
+  font-family: "ObjectSans-Thin";
+}
 .footer__left {
   justify-content: flex-end;
 }
@@ -446,7 +460,18 @@ a {
   padding: 0;
 }
 .footer__right {
-  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 4rem 0 5rem;
+}
+.footer__right .textbox {
+  display: inline-block;
+  margin: 4px 2px;
+  padding: 15px 32px;
+  color: black;
+  font-size: 16px;
 }
 
 /* SECTIONS */
