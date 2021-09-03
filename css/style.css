@@ -1,70 +1,43 @@
-@import '/node_modules/modern-normalize/modern-normalize.css';
+@charset "UTF-8";
+@import "/node_modules/modern-normalize/modern-normalize.css";
 /* FONTS */
 @font-face {
-  font-family: 'ObjectSans-Thin';
-  src: url('/assets/fonts/object-sans/ObjectSans-Thin.eot');
-  src: url('/assets/fonts/object-sans/ObjectSans-Thin.eot?#iefix')
-      format('embedded-opentype'),
-    url('/assets/fonts/object-sans/ObjectSans-Thin.woff2') format('woff2'),
-    url('/assets/fonts/object-sans/ObjectSans-Thin.woff') format('woff'),
-    url('/assets/fonts/object-sans/ObjectSans-Thin.ttf') format('truetype'),
-    url('/assets/fonts/object-sans/ObjectSans-Thin.svg#ObjectSans-Thin')
-      format('svg');
+  font-family: "ObjectSans-Thin";
+  src: url("/assets/fonts/object-sans/ObjectSans-Thin.eot");
+  src: url("/assets/fonts/object-sans/ObjectSans-Thin.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/object-sans/ObjectSans-Thin.woff2") format("woff2"), url("/assets/fonts/object-sans/ObjectSans-Thin.woff") format("woff"), url("/assets/fonts/object-sans/ObjectSans-Thin.ttf") format("truetype"), url("/assets/fonts/object-sans/ObjectSans-Thin.svg#ObjectSans-Thin") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: 'ObjectSans-Regular';
-  src: url('/assets/fonts/object-sans/ObjectSans-Regular.eot');
-  src: url('/assets/fonts/object-sans/ObjectSans-Regular.eot?#iefix')
-      format('embedded-opentype'),
-    url('/assets/fonts/object-sans/ObjectSans-Regular.woff2') format('woff2'),
-    url('/assets/fonts/object-sans/ObjectSans-Regular.woff') format('woff'),
-    url('/assets/fonts/object-sans/ObjectSans-Regular.ttf') format('truetype'),
-    url('/assets/fonts/object-sans/ObjectSans-Regular.svg#ObjectSans-Regular')
-      format('svg');
+  font-family: "ObjectSans-Regular";
+  src: url("/assets/fonts/object-sans/ObjectSans-Regular.eot");
+  src: url("/assets/fonts/object-sans/ObjectSans-Regular.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/object-sans/ObjectSans-Regular.woff2") format("woff2"), url("/assets/fonts/object-sans/ObjectSans-Regular.woff") format("woff"), url("/assets/fonts/object-sans/ObjectSans-Regular.ttf") format("truetype"), url("/assets/fonts/object-sans/ObjectSans-Regular.svg#ObjectSans-Regular") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: 'ObjectSans-Bold';
-  src: url('/assets/fonts/object-sans/ObjectSans-Bold.eot');
-  src: url('/assets/fonts/object-sans/ObjectSans-Bold.eot?#iefix')
-      format('embedded-opentype'),
-    url('/assets/fonts/object-sans/ObjectSans-Bold.woff2') format('woff2'),
-    url('/assets/fonts/object-sans/ObjectSans-Bold.woff') format('woff'),
-    url('/assets/fonts/object-sans/ObjectSans-Bold.ttf') format('truetype'),
-    url('/assets/fonts/object-sans/ObjectSans-Bold.svg#ObjectSans-Bold')
-      format('svg');
+  font-family: "ObjectSans-Bold";
+  src: url("/assets/fonts/object-sans/ObjectSans-Bold.eot");
+  src: url("/assets/fonts/object-sans/ObjectSans-Bold.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/object-sans/ObjectSans-Bold.woff2") format("woff2"), url("/assets/fonts/object-sans/ObjectSans-Bold.woff") format("woff"), url("/assets/fonts/object-sans/ObjectSans-Bold.ttf") format("truetype"), url("/assets/fonts/object-sans/ObjectSans-Bold.svg#ObjectSans-Bold") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
-  font-family: 'ObjectSans-Heavy';
-  src: url('/assets/fonts/object-sans/ObjectSans-Heavy.eot');
-  src: url('/assets/fonts/object-sans/ObjectSans-Heavy.eot?#iefix')
-      format('embedded-opentype'),
-    url('/assets/fonts/object-sans/ObjectSans-Heavy.woff2') format('woff2'),
-    url('/assets/fonts/object-sans/ObjectSans-Heavy.woff') format('woff'),
-    url('/assets/fonts/object-sans/ObjectSans-Heavy.ttf') format('truetype'),
-    url('/assets/fonts/object-sans/ObjectSans-Heavy.svg#ObjectSans-Heavy')
-      format('svg');
+  font-family: "ObjectSans-Heavy";
+  src: url("/assets/fonts/object-sans/ObjectSans-Heavy.eot");
+  src: url("/assets/fonts/object-sans/ObjectSans-Heavy.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/object-sans/ObjectSans-Heavy.woff2") format("woff2"), url("/assets/fonts/object-sans/ObjectSans-Heavy.woff") format("woff"), url("/assets/fonts/object-sans/ObjectSans-Heavy.ttf") format("truetype"), url("/assets/fonts/object-sans/ObjectSans-Heavy.svg#ObjectSans-Heavy") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 /* ICON FONTS */
 @font-face {
-  font-family: 'icomoon';
-  src: url('/assets/fonts/icon-fonts/icomoon.eot?lpuwsi');
-  src: url('/assets/fonts/icon-fonts/icomoon.eot?lpuwsi#iefix')
-      format('embedded-opentype'),
-    url('/assets/fonts/icon-fonts/icomoon.ttf?lpuwsi') format('truetype'),
-    url('/assets/fonts/icon-fonts/icomoon.woff?lpuwsi') format('woff'),
-    url('/assets/fonts/icon-fonts/icomoon.svg?lpuwsi#icomoon') format('svg');
+  font-family: "icomoon";
+  src: url("/assets/fonts/icon-fonts/icomoon.eot?lpuwsi");
+  src: url("/assets/fonts/icon-fonts/icomoon.eot?lpuwsi#iefix") format("embedded-opentype"), url("/assets/fonts/icon-fonts/icomoon.ttf?lpuwsi") format("truetype"), url("/assets/fonts/icon-fonts/icomoon.woff?lpuwsi") format("woff"), url("/assets/fonts/icon-fonts/icomoon.svg?lpuwsi#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -124,7 +97,7 @@ h1,
 h2,
 h3,
 h4 {
-  font-family: 'ObjectSans-Bold';
+  font-family: "ObjectSans-Bold";
   margin: 0;
   padding: 0;
 }
@@ -175,7 +148,7 @@ h3 {
 
 /* Paragraph styles */
 p {
-  font-family: 'ObjectSans-Regular';
+  font-family: "ObjectSans-Regular";
   font-size: 16px;
   line-height: 1.6;
 }
@@ -200,10 +173,10 @@ a {
 }
 
 /* ICONS */
-[class^='icon-'],
-[class*=' icon-'] {
+[class^=icon-],
+[class*=" icon-"] {
   /* use !important to prevent issues with browser extensions that change fonts */
-  font-family: 'icomoon' !important;
+  font-family: "icomoon" !important;
   font-style: normal;
   font-weight: normal;
   font-variant: normal;
@@ -215,63 +188,63 @@ a {
 }
 
 .icon-social-media_twitter_icon:before {
-  content: '\e900';
+  content: "";
 }
 
 .icon-mail_social-media_icon:before {
-  content: '\e901';
+  content: "";
 }
 
 .icon-intsagram_social-media_icon:before {
-  content: '\e902';
+  content: "";
 }
 
 .icon-facebook_social-media_icon:before {
-  content: '\e903';
+  content: "";
 }
 
 .icon-image:before {
-  content: '\e90d';
+  content: "";
 }
 
 .icon-coin-dollar:before {
-  content: '\e93b';
+  content: "";
 }
 
 .icon-glass:before {
-  content: '\e9a0';
+  content: "";
 }
 
 .icon-star-empty:before {
-  content: '\e9d7';
+  content: "";
 }
 
 .icon-star-full:before {
-  content: '\e9d9';
+  content: "";
 }
 
 .icon-cross:before {
-  content: '\ea0f';
+  content: "";
 }
 
 .icon-loop2:before {
-  content: '\ea2e';
+  content: "";
 }
 
 .icon-arrow-up2:before {
-  content: '\ea3a';
+  content: "";
 }
 
 .icon-arrow-right2:before {
-  content: '\ea3c';
+  content: "";
 }
 
 .icon-arrow-down2:before {
-  content: '\ea3e';
+  content: "";
 }
 
 .icon-arrow-left2:before {
-  content: '\ea40';
+  content: "";
 }
 
 /* HEADER */
@@ -329,15 +302,13 @@ a {
 .header .burger-line:nth-child(1) {
   top: 0;
 }
-.header .burger-line:nth-child(2),
-.header .burger-line:nth-child(3) {
+.header .burger-line:nth-child(2), .header .burger-line:nth-child(3) {
   top: 0.5rem;
 }
 .header .burger-line:nth-child(4) {
   top: 1rem;
 }
-.header .burger.active .burger-line:nth-child(1),
-.header .burger.active .burger-line:nth-child(4) {
+.header .burger.active .burger-line:nth-child(1), .header .burger.active .burger-line:nth-child(4) {
   top: 1.25rem;
   width: 0%;
   left: 50%;
@@ -376,7 +347,7 @@ a {
   z-index: 1;
 }
 .header__menu a.nav-item:before {
-  content: '';
+  content: "";
   position: absolute;
   background-color: #fdca6a;
   z-index: -1;
@@ -387,8 +358,7 @@ a {
   opacity: 1;
   transition: all 0.3s;
 }
-.header__menu a.nav-item:hover:before,
-.header__menu a.nav-item:focus:before {
+.header__menu a.nav-item:hover:before, .header__menu a.nav-item:focus:before {
   width: 100%;
 }
 @media only screen and (max-width: 1024px) {
@@ -422,7 +392,7 @@ a {
 
 /* FOOTER */
 .footer {
-  background-color: #c4c4c4;
+  background-color: black;
   display: flex;
   flex-wrap: nowrap;
   height: 651px;
@@ -438,8 +408,7 @@ a {
     padding: 0 40px;
   }
 }
-.footer__left,
-.footer__right {
+.footer__left, .footer__right {
   display: flex;
   flex-direction: column;
   width: 50%;
@@ -488,7 +457,7 @@ a {
   align-items: flex-end;
   height: 100vh;
   width: 100%;
-  background-image: url('/assets/images/hero_image.jpg');
+  background-image: url("/assets/images/hero_image.jpg");
   background-color: #cccccc;
   background-position: center;
   background-repeat: no-repeat;
@@ -503,7 +472,7 @@ a {
   top: 50%;
   left: 10%;
   font-size: 80px;
-  font-family: 'ObjectSans-Regular';
+  font-family: "ObjectSans-Regular";
 }
 
 .headline-block {
@@ -514,7 +483,7 @@ a {
   align-items: center;
 }
 .headline-block::after {
-  content: '';
+  content: "";
   display: flex;
   height: 2px;
   background-color: black;
@@ -559,7 +528,7 @@ a {
   padding-bottom: 2rem;
 }
 .cta-block h2 span {
-  font-family: 'ObjectSans-Thin';
+  font-family: "ObjectSans-Thin";
 }
 
 .article-blocks {
@@ -647,3 +616,5 @@ a {
   background-color: #c4c4c4;
   color: black;
 }
+
+/*# sourceMappingURL=style.css.map */
