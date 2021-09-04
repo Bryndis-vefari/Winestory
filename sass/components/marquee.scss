@@ -1,0 +1,24 @@
+.marquee {
+  max-width: 100%;
+  // overflow: hidden;
+  &__inner {
+    white-space: nowrap;
+    overflow: hidden;
+    display: inline-block;
+    // animation: marquee 80s linear infinite;
+    transition: all 0.2s ease;
+  }
+  h3 {
+    display: inline-block;
+    transition: all 0.2s ease;
+  }
+}
+
+@keyframes marquee {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}

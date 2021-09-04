@@ -28,6 +28,16 @@
     z-index: -1;
   }
 
+  @media screen and (max-width: 414px) {
+    &__logo {
+      max-width: 12rem;
+
+      svg {
+        width: 100%;
+      }
+    }
+  }
+
   &__menu {
     position: relative;
     display: flex;
@@ -73,7 +83,7 @@
         &:before {
           content: "";
           position: absolute;
-          background-color: $accent-color;
+          background-color: $accent-color_red;
           z-index: -1;
           width: 0;
           height: 55%;
@@ -172,7 +182,7 @@
       li {
         &:hover a {
           transition: all 0.3s ease-out;
-          color: $accent-color;
+          color: $accent-color_red;
         }
       }
     }

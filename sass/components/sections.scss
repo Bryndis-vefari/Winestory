@@ -11,17 +11,23 @@
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
+  overflow: hidden;
 
   h1 {
-    text-align: right;
-    line-height: 0.5;
-
-    span {
+    .small-text {
       position: absolute;
-      top: 50%;
-      left: 10%;
-      font-size: 80px;
-      font-family: "ObjectSans-Regular";
+      bottom: 30%;
+      left: 0;
+      font-size: 25px;
+      line-height: 1;
+      font-family: $font-light;
+
+      @media screen and (min-width: 320px) {
+        font-size: calc(25px + (80 - 25) * ((100vw - 320px) / (1920 - 320)));
+      }
+      @media screen and (min-width: 1920px) {
+        font-size: 80px;
+      }
     }
   }
 }
@@ -82,77 +88,5 @@
     span {
       font-family: $font-light;
     }
-  }
-}
-
-.article-blocks {
-  display: flex;
-  flex-direction: column;
-
-  &__item {
-    display: flex;
-    flex-wrap: wrap;
-    padding: 6rem 0;
-
-    &.item--1 {
-      flex: max(200px, 100%/3 - 20px);
-    }
-
-    &.item--2 {
-      flex-direction: row-reverse;
-    }
-
-    &.item--3 {
-      flex-direction: column-reverse;
-    }
-
-    @media screen and (min-width: 1920px) {
-    }
-
-    &__text {
-    }
-    &__img {
-    }
-  }
-
-  & .headline-block {
-    position: relative;
-    margin: 0 auto;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    text-align: center;
-
-    h2 {
-      margin-bottom: 2rem;
-      text-transform: lowercase;
-    }
-  }
-}
-
-.marquee {
-  max-width: 100%;
-  // overflow: hidden;
-  &__inner {
-    white-space: nowrap;
-    overflow: hidden;
-    display: inline-block;
-    // animation: marquee 80s linear infinite;
-    transition: all 0.2s ease;
-  }
-  h3 {
-    text-transform: uppercase;
-    display: inline-block;
-    transition: all 0.2s ease;
-  }
-}
-
-@keyframes marquee {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
   }
 }

@@ -32,9 +32,9 @@
   p {
     color: $white;
     padding-bottom: 2rem;
-  
+
     span {
-        font-family: $font-light;
+      font-family: $font-light;
     }
   }
 
@@ -59,7 +59,7 @@
         padding: 7px 10px;
 
         a {
-          color: $accent-color;
+          color: $accent-color_yellow;
           list-style-type: none;
 
           &:before {
@@ -67,14 +67,11 @@
           }
 
           &:hover {
-            color: darken($accent-color, 15%);
+            color: darken($accent-color_yellow, 15%);
           }
         }
       }
     }
-
-
-
 
     .logo a {
       padding: 0;
@@ -82,13 +79,11 @@
   }
 
   &__right {
-  display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  align-items: flex-start;
-  padding: 4rem 0 5rem;
-
-
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    align-items: flex-start;
+    padding: 4rem 0 5rem;
 
     .textbox {
       display: inline-block;
@@ -97,7 +92,5 @@
       color: $font-color_primary;
       font-size: 16px;
     }
-    
-
   }
 }
