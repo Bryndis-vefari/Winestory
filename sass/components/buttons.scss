@@ -1,6 +1,7 @@
+/* BUTTON STYLES */
 .btn {
   display: inline-block;
-  margin: 0.25rem 0.125rem;
+  margin: 0;
   padding: 15px 32px;
   color: $font-color_primary;
   font-size: 16px;
@@ -12,11 +13,19 @@
   &--outline {
     background-color: $background-color_primary;
     color: $font-color_black;
+
+    &.dark-bgr {
+      border-color: $background-color_primary;
+    }
   }
 
   &--solid {
     background-color: $background-color_secondary;
     color: $font-color_white;
+
+    &.dark-bgr {
+      border-color: $background-color_secondary;
+    }
   }
 
   &--accent {
@@ -24,14 +33,23 @@
     color: $black;
   }
 
-  &:hover {
+  &:hover,
+  &:active {
     &.btn--outline {
       background-color: $light-gray;
+
+      &.dark-bgr {
+        border-color: $light-gray;
+      }
     }
 
     &.btn--solid {
       background-color: $accent-color_red;
       color: $font-color_primary;
+
+      &.dark-bgr {
+        border-color: $accent-color_red;
+      }
     }
   }
 }

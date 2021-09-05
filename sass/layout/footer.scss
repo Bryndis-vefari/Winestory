@@ -1,44 +1,42 @@
-/* FOOTER */
 .footer {
-  background-color: $black;
   display: flex;
-  flex-wrap: nowrap;
-  padding: 40px 15px;
-  margin-top: 4rem;
+  flex-direction: column;
+  background-color: $background-color_secondary;
+  padding: 40px 24px;
 
-  @media screen and (min-width: 320px) {
-    padding: 40px calc(15px + (120 - 15) * ((100vw - 320px) / (1440 - 320)));
-  }
-  @media screen and (min-width: 1440px) {
-    padding: 40px 120px;
-  }
-
-  &__left,
-  &__right {
-    display: flex;
-    flex-direction: column;
-    width: 50%;
+  h4 {
+    padding-bottom: 1rem;
+    color: $font-color_white;
+    font-size: 1.8rem;
   }
 
-  /* Left footer styles */
-  &__left {
+  &__navigation,
+  &__subscription {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
   }
 
-  &__logo a {
-    padding: 0;
+  &__logo {
+    width: 100%;
+
+    a {
+      padding: 0;
+      padding-bottom: 2rem;
+    }
   }
 
   &__page-links {
     width: 100%;
     display: inline-block;
+    padding-bottom: 3rem;
 
     a {
       color: $white;
+      font-size: 1.2rem;
 
-      &:hover {
+      &:hover,
+      &:active {
         color: $accent-color_red;
       }
     }
@@ -47,29 +45,28 @@
   &__social {
     display: inline;
     width: 100%;
+    padding-bottom: 3rem;
 
-    ul li {
+    a {
       display: inline-block;
+      padding: 0;
+      padding-right: 2rem;
 
-      a {
-        &:before {
-          font-size: 2.2rem;
-          color: $accent-color_yellow;
-          transition: all 0.3s ease-in-out;
-        }
+      &:before {
+        font-size: 2.2rem;
+        color: $accent-color_yellow;
+        transition: all 0.3s ease-in-out;
+      }
 
-        &:hover::before {
-          color: $accent-color_red;
-        }
+      &:hover::before,
+      &:active::before {
+        color: $accent-color_red;
       }
     }
   }
 
-  /* Right footer styles */
-  &__right {
-    justify-content: center;
-    align-items: flex-start;
-
+  /* Footer styles for subscription */
+  &__subscription {
     h2 {
       color: $white;
       padding-bottom: 2rem;
@@ -81,6 +78,7 @@
 
     p {
       color: $white;
+      max-width: 20rem;
 
       span {
         font-family: $font-light;
@@ -88,16 +86,30 @@
     }
 
     .textbox {
-      width: 100%;
       display: block;
-      margin: 4px 2px;
-      padding: 15px 60px;
+      width: 100%;
+      max-width: 24rem;
+      margin: 1rem 0;
+      padding: 15px;
       color: $font-color_primary;
       font-size: 16px;
+      border: none;
+      border-radius: 0;
     }
 
     .btn {
+      border-color: $accent-color_yellow;
       transition: all 0.3s ease-in-out;
+    }
+  }
+
+  @media screen and (min-width: 768px) {
+    flex-direction: row;
+    flex-wrap: wrap;
+
+    &__navigation,
+    &__subscription {
+      width: 50%;
     }
   }
 }

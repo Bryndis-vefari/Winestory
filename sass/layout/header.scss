@@ -25,9 +25,11 @@
     justify-content: space-between;
     align-items: center;
     width: 100%;
+    height: 100%;
     z-index: -1;
   }
 
+  /* Header logo styles */
   @media screen and (max-width: 414px) {
     &__logo {
       max-width: 12rem;
@@ -38,6 +40,7 @@
     }
   }
 
+  /* List menu styles */
   &__menu {
     position: relative;
     display: flex;
@@ -81,7 +84,7 @@
         z-index: 1;
 
         &:before {
-          content: '';
+          content: "";
           position: absolute;
           background-color: $accent-color_red;
           z-index: -1;
@@ -94,7 +97,7 @@
         }
 
         &:hover,
-        &:focus {
+        &:active {
           &:before {
             width: 100%;
           }
@@ -107,10 +110,11 @@
     }
   }
 
+  /* Hamburger menu styles */
   &__hamburger {
     position: absolute;
     width: 40px;
-    height: 44px;
+    height: 100px;
     right: 0;
     top: 0;
     background: transparent;
@@ -148,6 +152,7 @@
     }
   }
 
+  /* Mobile menu styles */
   &__mobile-menu {
     z-index: 1;
     position: absolute;
@@ -179,8 +184,9 @@
     }
 
     &__navigation {
-      li {
-        &:hover a {
+      li:hover,
+      li:active {
+        a {
           transition: all 0.3s ease-out;
           color: $accent-color_red;
         }
@@ -200,6 +206,7 @@
 
     @media screen and (min-width: 1025px) {
       visibility: hidden !important;
+      height: 0;
     }
   }
 }

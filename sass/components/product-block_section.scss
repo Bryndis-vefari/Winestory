@@ -1,4 +1,4 @@
-/* product BLOCK SECTION */
+/* PRODUCT-BLOCK SECTION */
 /* Styles for product blocks below screen size 768px */
 .product-block {
   position: relative;
@@ -10,7 +10,7 @@
   padding-bottom: 4rem;
 
   &:after {
-    content: '';
+    content: "";
     position: absolute;
     display: block;
     height: 90%;
