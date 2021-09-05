@@ -959,6 +959,113 @@ a {
   margin-top: auto;
 }
 
+/* product BLOCK SECTION */
+/* Styles for product blocks below screen size 768px */
+.product-block {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 6rem 0;
+  height: 100%;
+  padding-bottom: 4rem;
+  /* Styles for product blocks above screen size 768px */
+}
+.product-block:after {
+  content: "";
+  position: absolute;
+  display: block;
+  height: 90%;
+  width: 100vw;
+  bottom: 0;
+  left: 0px;
+  background-color: #e0e0e0;
+  z-index: 1;
+  overflow-x: hidden;
+  /* Negative positioning - by offsetting page-wrap padding */
+}
+@media screen and (min-width: 320px) {
+  .product-block:after {
+    left: calc(-16px + (-120 + 16) * ((100vw - 320px) / (1440 - 320)));
+  }
+}
+@media screen and (min-width: 768px) {
+  .product-block:after {
+    height: 80%;
+  }
+}
+@media screen and (min-width: 1440px) {
+  .product-block:after {
+    left: 0 -7.5rem;
+  }
+}
+.product-block__item {
+  z-index: 2;
+  position: relative;
+  max-width: 480px;
+  margin: 0 auto;
+}
+.product-block__item h3 {
+  text-transform: uppercase;
+}
+.product-block__item text {
+  padding-bottom: 2rem;
+}
+.product-block__item img {
+  margin-top: -1rem;
+  padding-bottom: 3rem;
+}
+.product-block__item a {
+  margin-top: 3rem;
+}
+@media screen and (min-width: 768px) {
+  .product-block__item {
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 100%;
+  }
+  .product-block__item__text, .product-block__item__img {
+    width: 50%;
+    min-width: 300px;
+  }
+  .product-block__item__text {
+    padding: calc(32px + (48 - 32) * ((100vw - 768px) / (1440 - 768)));
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 1440px) {
+  .product-block__item__text {
+    padding: 3rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .product-block__item__text p {
+    padding-left: 2rem;
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 768px) {
+  .product-block__item__text p {
+    padding-left: calc( 32px + (64 - 32) * ((100vw - 768px) / (1440 - 768)) );
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 1440px) {
+  .product-block__item__text p {
+    padding-left: 4rem;
+  }
+}
+@media screen and (min-width: 768px) {
+  .product-block__item__img img {
+    height: auto;
+    width: 100%;
+    padding-bottom: 0rem;
+    padding-right: 2rem;
+  }
+}
+@media screen and (min-width: 768px) and (min-width: 768px) {
+  .product-block__item__img {
+    width: 33.33%;
+  }
+}
+
 /* @import "components/marquee.scss";*/
 
 /*# sourceMappingURL=style.css.map */

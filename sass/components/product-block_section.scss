@@ -1,0 +1,109 @@
+/* product BLOCK SECTION */
+/* Styles for product blocks below screen size 768px */
+.product-block {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  margin: 6rem 0;
+  height: 100%;
+  padding-bottom: 4rem;
+
+  &:after {
+    content: '';
+    position: absolute;
+    display: block;
+    height: 90%;
+    width: 100vw;
+    bottom: 0;
+    left: 0px;
+    background-color: $background-color_gray;
+    z-index: 1;
+    overflow-x: hidden;
+
+    /* Negative positioning - by offsetting page-wrap padding */
+    @media screen and (min-width: 320px) {
+      left: calc(-16px + (-120 + 16) * ((100vw - 320px) / (1440 - 320)));
+    }
+
+    @media screen and (min-width: 768px) {
+      height: 80%;
+    }
+    @media screen and (min-width: 1440px) {
+      left: 0 -7.5rem;
+    }
+  }
+
+  &__item {
+    z-index: 2;
+    position: relative;
+    max-width: 480px;
+    margin: 0 auto;
+
+    h3 {
+      text-transform: uppercase;
+    }
+
+    text {
+      padding-bottom: 2rem;
+    }
+
+    img {
+      margin-top: -1rem;
+      padding-bottom: 3rem;
+    }
+
+    a {
+      margin-top: 3rem;
+    }
+  }
+
+  /* Styles for product blocks above screen size 768px */
+  @media screen and (min-width: 768px) {
+    &__item {
+      display: flex;
+      flex-wrap: wrap;
+      max-width: 100%;
+
+      &__text,
+      &__img {
+        width: 50%;
+        min-width: 300px;
+      }
+
+      &__text {
+        padding: calc(32px + (48 - 32) * ((100vw - 768px) / (1440 - 768)));
+
+        @media screen and (min-width: 1440px) {
+          padding: 3rem;
+        }
+
+        p {
+          padding-left: 2rem;
+
+          @media screen and (min-width: 768px) {
+            padding-left: calc(
+              32px + (64 - 32) * ((100vw - 768px) / (1440 - 768))
+            );
+          }
+          @media screen and (min-width: 1440px) {
+            padding-left: 4rem;
+          }
+        }
+      }
+
+      &__img {
+        img {
+          height: auto;
+          width: 100%;
+          padding-bottom: 0rem;
+          padding-right: 2rem;
+        }
+
+        @media screen and (min-width: 768px) {
+          width: 33.33%;
+        }
+      }
+    }
+  }
+}
