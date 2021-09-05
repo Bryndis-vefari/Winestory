@@ -1,107 +1,102 @@
-/* product BLOCK SECTION */
-/* Styles for product blocks below screen size 768px */
+/* product block section */
 .product-block {
   position: relative;
   display: flex;
-  flex-direction: column;
-  justify-content: flex-start;
-  margin: 6rem 0;
-  height: 100%;
-  padding-bottom: 4rem;
+  width: 100vw;
+  margin: 0 auto;
+  padding: 0 16px;
+  padding-top: 4rem;
 
-  &:after {
+  @media screen and (min-width: 320px) {
+    padding: 0 calc(16px + (120 - 16) * ((100vw - 320px) / (1440 - 320)));
+    padding-top: 4rem;
+  }
+
+  @media screen and (min-width: 768px) {
+    padding-top: 6rem;
+  }
+
+  &:before {
     content: '';
     position: absolute;
     display: block;
-    height: 90%;
+    height: 80%;
     width: 100vw;
+    left: 0;
     bottom: 0;
-    left: 0px;
     background-color: $background-color_gray;
-    z-index: 1;
-    overflow-x: hidden;
-
-    /* Negative positioning - by offsetting page-wrap padding */
-    @media screen and (min-width: 320px) {
-      left: calc(-16px + (-120 + 16) * ((100vw - 320px) / (1440 - 320)));
-    }
 
     @media screen and (min-width: 768px) {
-      height: 80%;
+      height: 65%;
     }
-    @media screen and (min-width: 1440px) {
-      left: 0 -7.5rem;
+
+    @media screen and (min-width: 960px) {
+      height: 60%;
     }
   }
 
   &__item {
-    z-index: 2;
-    position: relative;
-    max-width: 480px;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    align-items: center;
     margin: 0 auto;
+    z-index: 1;
+    max-width: 480px;
+    padding-bottom: 3rem;
 
-    h3 {
-      text-transform: uppercase;
-    }
-
-    text {
+    &__img {
       padding-bottom: 2rem;
     }
 
-    img {
-      margin-top: -1rem;
-      padding-bottom: 3rem;
+    &__text {
+      p {
+        padding-bottom: 2rem;
+        max-width: 480px;
+      }
     }
 
-    a {
-      margin-top: 3rem;
-    }
-  }
-
-  /* Styles for product blocks above screen size 768px */
-  @media screen and (min-width: 768px) {
-    &__item {
-      display: flex;
-      flex-wrap: wrap;
+    @media screen and (min-width: 768px) {
       max-width: 100%;
+      flex-direction: row;
+      z-index: 2;
+      justify-content: center;
 
-      &__text,
       &__img {
-        width: 50%;
-        min-width: 300px;
+        width: 33.3%;
+        margin-right: auto;
+        padding-bottom: 0rem;
       }
 
       &__text {
-        padding: calc(32px + (48 - 32) * ((100vw - 768px) / (1440 - 768)));
-
-        @media screen and (min-width: 1440px) {
-          padding: 3rem;
-        }
+        width: 55%;
 
         p {
-          padding-left: 2rem;
+          padding-left: calc(
+            32px + (64 - 32) * ((100vw - 768px) / (1440 - 768))
+          );
+        }
 
-          @media screen and (min-width: 768px) {
-            padding-left: calc(
-              32px + (64 - 32) * ((100vw - 768px) / (1440 - 768))
-            );
-          }
-          @media screen and (min-width: 1440px) {
-            padding-left: 4rem;
-          }
+        a {
+          margin-left: calc(
+            32px + (64 - 32) * ((100vw - 768px) / (1440 - 768))
+          );
         }
       }
+    }
 
-      &__img {
-        img {
-          height: auto;
-          width: 100%;
-          padding-bottom: 0rem;
-          padding-right: 2rem;
+    @media screen and (min-width: 960px) {
+      &__text {
+      }
+    }
+
+    @media screen and (min-width: 1200px) {
+      &__text {
+        p {
+          padding-left: 4rem;
         }
-
-        @media screen and (min-width: 768px) {
-          width: 33.33%;
+        a {
+          margin-left: 4rem;
         }
       }
     }
