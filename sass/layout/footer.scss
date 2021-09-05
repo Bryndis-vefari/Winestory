@@ -1,8 +1,17 @@
 .footer {
   display: flex;
   flex-direction: column;
-  background-color: $background-color_secondary;
+  margin-top: 34px;
   padding: 40px 24px;
+  background-color: $background-color_secondary;
+
+  @media screen and (min-width: 320px) {
+    margin-top: calc(34px + (120 - 34) * ((100vw - 320px) / (1440 - 320)));
+  }
+
+  @media screen and (min-width: 1440px) {
+    margin-top: 120px;
+  }
 
   h4 {
     padding-bottom: 1rem;

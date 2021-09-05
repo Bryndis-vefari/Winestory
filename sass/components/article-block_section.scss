@@ -7,6 +7,26 @@
   counter-reset: section-number;
   margin: 6rem 0;
 
+  h2 {
+    align-self: center;
+    text-align: center;
+    padding: 2rem 0;
+    max-width: 800px;
+    font-family: $font-regular;
+  }
+
+  @media screen and (min-width: 768px) {
+    h2 {
+      padding: 6rem 0;
+    }
+  }
+
+  @media screen and (min-width: 1024px) {
+    h2 {
+      padding: 8rem 0;
+    }
+  }
+
   &__item {
     position: relative;
     max-width: 30rem;
