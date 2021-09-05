@@ -81,7 +81,7 @@
         z-index: 1;
 
         &:before {
-          content: "";
+          content: '';
           position: absolute;
           background-color: $accent-color_red;
           z-index: -1;
@@ -148,24 +148,6 @@
     }
   }
 
-    a.nav-item {
-      display: block;
-      color: $black;
-      line-height: 1;
-      text-decoration: none;
-      z-index: 1;
-
-      &:before {
-        content: '';
-        position: absolute;
-        background-color: $accent-color;
-        z-index: -1;
-        width: 0;
-        height: 55%;
-        left: 0;
-        bottom: 0;
-        opacity: 1;
-        transition: all 0.3s;
   &__mobile-menu {
     z-index: 1;
     position: absolute;
