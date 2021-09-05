@@ -148,6 +148,7 @@ h2,
 h3,
 .h3 {
   font-size: 64px;
+  text-transform: uppercase;
 }
 @media screen and (min-width: 320px) {
   h3,
@@ -614,7 +615,6 @@ a {
   max-width: 480px;
   margin: 0 auto;
   padding: 3rem 0;
-  text-transform: lowercase;
 }
 .article-blocks__item:before {
   position: absolute;
