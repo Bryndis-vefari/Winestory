@@ -60,8 +60,10 @@ p {
 
 /* Anchor styles */
 a {
+  font-family: $font-regular;
   position: relative;
-  padding: 10px 5px;
+  padding: 12px 4px;
+  line-height: 1;
   color: #000;
   text-decoration: none;
   transition: all 0.3s;

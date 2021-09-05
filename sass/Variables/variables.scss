@@ -6,13 +6,17 @@ $font-heavy: 'ObjectSans-Heavy';
 
 $white: rgb(255, 255, 255);
 $black: rgb(0, 0, 0);
-$gray: rgb(196, 196, 196);
+$gray: #676767;
+$light-gray: rgb(224, 224, 224);
+$dark-gray: #333333;
 
 // Font-colors
 $font-color_primary: $black;
 $font-color_secondary: $white;
+$font-body: $dark-gray;
 
 $background-color_primary: $white;
 $background-color_secondary: $black;
+$background-color_gray: $light-gray;
 
 $accent-color: rgb(253, 202, 106);

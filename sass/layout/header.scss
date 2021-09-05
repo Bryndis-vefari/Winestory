@@ -112,7 +112,7 @@
       z-index: 1;
 
       &:before {
-        content: "";
+        content: '';
         position: absolute;
         background-color: $accent-color;
         z-index: -1;
