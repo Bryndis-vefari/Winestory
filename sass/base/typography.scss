@@ -4,24 +4,33 @@ h1,
 h2,
 h3,
 h4 {
+  color: $font-color_primary;
   font-family: $font-bold;
   margin: 0;
   padding: 0;
+
+  .accent-color {
+    color: $accent-color_red;
+  }
 }
 
-h1 {
-  color: #fff;
+h1,
+.h1 {
+  padding-right: 20px;
+  color: $font-color_white;
   font-size: 113px;
+  line-height: 0.8;
 
   @media screen and (min-width: 320px) {
-    font-size: calc(113px + (600 - 113) * ((100vw - 320px) / (1920 - 320)));
+    font-size: calc(113px + (288 - 113) * ((100vw - 320px) / (1920 - 320)));
   }
   @media screen and (min-width: 1920px) {
-    font-size: 600px;
+    font-size: 288px;
   }
 }
 
-h2 {
+h2,
+.h2 {
   font-size: 28px;
   line-height: 1.2;
 
@@ -33,7 +42,8 @@ h2 {
   }
 }
 
-h3 {
+h3,
+.h3 {
   font-size: 64px;
 
   @media screen and (min-width: 320px) {

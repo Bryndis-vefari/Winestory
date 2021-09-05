@@ -1,7 +1,7 @@
 <!-- prettier-ignore -->
 # Winestory
 
-### Clone pjoject
+### Clone project
 
 `git clone https://github.com/Bryndis-vefari/Winestory.git`
 
@@ -14,11 +14,11 @@ In terminal run:
 
 To compile sass to css run:
 
-`sass scss/style.scss css/style.css`
+`sass sass/style.scss css/style.css`
 
 To watch and compile when saving run:
 
-`sass --watch scss/style.scss css/style.css`
+`sass --watch sass/style.scss css/style.css`
 
 ## Icomoon fonts
 

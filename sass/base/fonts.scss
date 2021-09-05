@@ -2,13 +2,13 @@
 
 @font-face {
   font-family: "ObjectSans-Thin";
-  src: url("/assets/fonts/object-sans/ObjectSans-Thin.eot");
-  src: url("/assets/fonts/object-sans/ObjectSans-Thin.eot?#iefix")
+  src: url("../assets/fonts/object-sans/ObjectSans-Thin.eot");
+  src: url("../assets/fonts/object-sans/ObjectSans-Thin.eot?#iefix")
       format("embedded-opentype"),
-    url("/assets/fonts/object-sans/ObjectSans-Thin.woff2") format("woff2"),
-    url("/assets/fonts/object-sans/ObjectSans-Thin.woff") format("woff"),
-    url("/assets/fonts/object-sans/ObjectSans-Thin.ttf") format("truetype"),
-    url("/assets/fonts/object-sans/ObjectSans-Thin.svg#ObjectSans-Thin")
+    url("../assets/fonts/object-sans/ObjectSans-Thin.woff2") format("woff2"),
+    url("../assets/fonts/object-sans/ObjectSans-Thin.woff") format("woff"),
+    url("../assets/fonts/object-sans/ObjectSans-Thin.ttf") format("truetype"),
+    url("../assets/fonts/object-sans/ObjectSans-Thin.svg#ObjectSans-Thin")
       format("svg");
   font-weight: normal;
   font-style: normal;
@@ -17,13 +17,13 @@
 
 @font-face {
   font-family: "ObjectSans-Regular";
-  src: url("/assets/fonts/object-sans/ObjectSans-Regular.eot");
-  src: url("/assets/fonts/object-sans/ObjectSans-Regular.eot?#iefix")
+  src: url("../assets/fonts/object-sans/ObjectSans-Regular.eot");
+  src: url("../assets/fonts/object-sans/ObjectSans-Regular.eot?#iefix")
       format("embedded-opentype"),
-    url("/assets/fonts/object-sans/ObjectSans-Regular.woff2") format("woff2"),
-    url("/assets/fonts/object-sans/ObjectSans-Regular.woff") format("woff"),
-    url("/assets/fonts/object-sans/ObjectSans-Regular.ttf") format("truetype"),
-    url("/assets/fonts/object-sans/ObjectSans-Regular.svg#ObjectSans-Regular")
+    url("../assets/fonts/object-sans/ObjectSans-Regular.woff2") format("woff2"),
+    url("../assets/fonts/object-sans/ObjectSans-Regular.woff") format("woff"),
+    url("../assets/fonts/object-sans/ObjectSans-Regular.ttf") format("truetype"),
+    url("../assets/fonts/object-sans/ObjectSans-Regular.svg#ObjectSans-Regular")
       format("svg");
   font-weight: normal;
   font-style: normal;
@@ -32,13 +32,13 @@
 
 @font-face {
   font-family: "ObjectSans-Bold";
-  src: url("/assets/fonts/object-sans/ObjectSans-Bold.eot");
-  src: url("/assets/fonts/object-sans/ObjectSans-Bold.eot?#iefix")
+  src: url("../assets/fonts/object-sans/ObjectSans-Bold.eot");
+  src: url("../assets/fonts/object-sans/ObjectSans-Bold.eot?#iefix")
       format("embedded-opentype"),
-    url("/assets/fonts/object-sans/ObjectSans-Bold.woff2") format("woff2"),
-    url("/assets/fonts/object-sans/ObjectSans-Bold.woff") format("woff"),
-    url("/assets/fonts/object-sans/ObjectSans-Bold.ttf") format("truetype"),
-    url("/assets/fonts/object-sans/ObjectSans-Bold.svg#ObjectSans-Bold")
+    url("../assets/fonts/object-sans/ObjectSans-Bold.woff2") format("woff2"),
+    url("../assets/fonts/object-sans/ObjectSans-Bold.woff") format("woff"),
+    url("../assets/fonts/object-sans/ObjectSans-Bold.ttf") format("truetype"),
+    url("../assets/fonts/object-sans/ObjectSans-Bold.svg#ObjectSans-Bold")
       format("svg");
   font-weight: normal;
   font-style: normal;
@@ -47,13 +47,13 @@
 
 @font-face {
   font-family: "ObjectSans-Heavy";
-  src: url("/assets/fonts/object-sans/ObjectSans-Heavy.eot");
-  src: url("/assets/fonts/object-sans/ObjectSans-Heavy.eot?#iefix")
+  src: url("../assets/fonts/object-sans/ObjectSans-Heavy.eot");
+  src: url("../assets/fonts/object-sans/ObjectSans-Heavy.eot?#iefix")
       format("embedded-opentype"),
-    url("/assets/fonts/object-sans/ObjectSans-Heavy.woff2") format("woff2"),
-    url("/assets/fonts/object-sans/ObjectSans-Heavy.woff") format("woff"),
-    url("/assets/fonts/object-sans/ObjectSans-Heavy.ttf") format("truetype"),
-    url("/assets/fonts/object-sans/ObjectSans-Heavy.svg#ObjectSans-Heavy")
+    url("../assets/fonts/object-sans/ObjectSans-Heavy.woff2") format("woff2"),
+    url("../assets/fonts/object-sans/ObjectSans-Heavy.woff") format("woff"),
+    url("../assets/fonts/object-sans/ObjectSans-Heavy.ttf") format("truetype"),
+    url("../assets/fonts/object-sans/ObjectSans-Heavy.svg#ObjectSans-Heavy")
       format("svg");
   font-weight: normal;
   font-style: normal;
@@ -63,12 +63,12 @@
 /* ICON FONTS */
 @font-face {
   font-family: "icomoon";
-  src: url("/assets/fonts/icon-fonts/icomoon.eot?lpuwsi");
-  src: url("/assets/fonts/icon-fonts/icomoon.eot?lpuwsi#iefix")
+  src: url("../assets/fonts/icon-fonts/icomoon.eot?lpuwsi");
+  src: url("../assets/fonts/icon-fonts/icomoon.eot?lpuwsi#iefix")
       format("embedded-opentype"),
-    url("/assets/fonts/icon-fonts/icomoon.ttf?lpuwsi") format("truetype"),
-    url("/assets/fonts/icon-fonts/icomoon.woff?lpuwsi") format("woff"),
-    url("/assets/fonts/icon-fonts/icomoon.svg?lpuwsi#icomoon") format("svg");
+    url("../assets/fonts/icon-fonts/icomoon.ttf?lpuwsi") format("truetype"),
+    url("../assets/fonts/icon-fonts/icomoon.woff?lpuwsi") format("woff"),
+    url("../assets/fonts/icon-fonts/icomoon.svg?lpuwsi#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;

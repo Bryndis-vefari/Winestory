@@ -1,6 +1,6 @@
 .btn {
   display: inline-block;
-  margin: 4px 2px;
+  margin: 0.25rem 0.125rem;
   padding: 15px 32px;
   color: $font-color_primary;
   font-size: 16px;
@@ -11,26 +11,26 @@
 
   &--outline {
     background-color: $background-color_primary;
-    color: $font-color_primary;
+    color: $font-color_black;
   }
 
   &--solid {
     background-color: $background-color_secondary;
-    color: $font-color_secondary;
+    color: $font-color_white;
   }
 
   &--accent {
-    background-color: $accent-color;
+    background-color: $accent-color_yellow;
     color: $black;
   }
 
   &:hover {
     &.btn--outline {
-      background-color: $gray;
+      background-color: $light-gray;
     }
 
     &.btn--solid {
-      background-color: $gray;
+      background-color: $accent-color_red;
       color: $font-color_primary;
     }
   }

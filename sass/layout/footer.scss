@@ -1,16 +1,16 @@
 /* FOOTER */
 .footer {
-  background-color: $gray;
+  background-color: $black;
   display: flex;
   flex-wrap: nowrap;
-  height: 651px;
-  padding: 0 15px;
+  padding: 40px 15px;
+  margin-top: 4rem;
 
   @media screen and (min-width: 320px) {
-    padding: 0 calc(15px + (40 - 15) * ((100vw - 320px) / (1920 - 320)));
+    padding: 40px calc(15px + (120 - 15) * ((100vw - 320px) / (1440 - 320)));
   }
-  @media screen and (min-width: 1920px) {
-    padding: 0 40px;
+  @media screen and (min-width: 1440px) {
+    padding: 40px 120px;
   }
 
   &__left,
@@ -20,47 +20,84 @@
     width: 50%;
   }
 
+  /* Left footer styles */
   &__left {
-    justify-content: flex-end;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+  }
 
-    .social {
-      position: fixed;
-      left: 0;
-      top: 50%;
-      transform: translateY(-50%);
-      z-index: 99;
-      display: none;
-      visibility: hidden;
+  &__logo a {
+    padding: 0;
+  }
 
-      ul {
-        margin: 0;
-        padding: 0;
+  &__page-links {
+    width: 100%;
+    display: inline-block;
+
+    a {
+      color: $white;
+
+      &:hover {
+        color: $accent-color_red;
       }
-
-      li {
-        padding: 7px 10px;
-
-        a {
-          color: $accent-color;
-          list-style-type: none;
-
-          &:before {
-            font-size: 2.2rem;
-          }
-
-          &:hover {
-            color: darken($accent-color, 15%);
-          }
-        }
-      }
-    }
-
-    .logo a {
-      padding: 0;
     }
   }
 
+  &__social {
+    display: inline;
+    width: 100%;
+
+    ul li {
+      display: inline-block;
+
+      a {
+        &:before {
+          font-size: 2.2rem;
+          color: $accent-color_yellow;
+          transition: all 0.3s ease-in-out;
+        }
+
+        &:hover::before {
+          color: $accent-color_red;
+        }
+      }
+    }
+  }
+
+  /* Right footer styles */
   &__right {
     justify-content: center;
+    align-items: flex-start;
+
+    h2 {
+      color: $white;
+      padding-bottom: 2rem;
+
+      span {
+        font-family: $font-light;
+      }
+    }
+
+    p {
+      color: $white;
+
+      span {
+        font-family: $font-light;
+      }
+    }
+
+    .textbox {
+      width: 100%;
+      display: block;
+      margin: 4px 2px;
+      padding: 15px 60px;
+      color: $font-color_primary;
+      font-size: 16px;
+    }
+
+    .btn {
+      transition: all 0.3s ease-in-out;
+    }
   }
 }

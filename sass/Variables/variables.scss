@@ -1,22 +1,24 @@
 // Font Family
-$font-light: 'ObjectSans-Thin';
-$font-regular: 'ObjectSans-Regular';
-$font-bold: 'ObjectSans-Bold';
-$font-heavy: 'ObjectSans-Heavy';
+$font-light: "ObjectSans-Thin";
+$font-regular: "ObjectSans-Regular";
+$font-bold: "ObjectSans-Bold";
+$font-heavy: "ObjectSans-Heavy";
 
 $white: rgb(255, 255, 255);
 $black: rgb(0, 0, 0);
-$gray: #676767;
 $light-gray: rgb(224, 224, 224);
-$dark-gray: #333333;
+$dim-gray: rgb(103, 103, 103);
+$jet-gray: rgb(51, 51, 51);
 
 // Font-colors
-$font-color_primary: $black;
-$font-color_secondary: $white;
-$font-body: $dark-gray;
+$font-color_primary: $jet-gray;
+$font-color_secondary: $dim-gray;
+$font-color_white: $white;
+$font-color_black: $black;
 
 $background-color_primary: $white;
 $background-color_secondary: $black;
 $background-color_gray: $light-gray;
 
-$accent-color: rgb(253, 202, 106);
+$accent-color_yellow: rgb(253, 202, 106);
+$accent-color_red: rgb(238, 83, 83);
