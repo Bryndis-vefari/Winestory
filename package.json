@@ -1,22 +1,22 @@
 {
   "name": "winestory",
   "version": "1.0.0",
-  "description": "<!-- prettier-ignore --> # Winestory",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "description": "Winestory",
+  "author": "Bibi, Heba, Tinna, Arna Vala",
+  "main": "scripts.js",
+  "homepage": "https://github.com/Bryndis-vefari/Winestory#readme",
+  "license": "ISC",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/Bryndis-vefari/Winestory.git"
   },
-  "author": "",
-  "license": "ISC",
   "bugs": {
     "url": "https://github.com/Bryndis-vefari/Winestory/issues"
   },
-  "homepage": "https://github.com/Bryndis-vefari/Winestory#readme",
   "dependencies": {
     "modern-normalize": "^1.1.0"
+  },
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
   }
 }

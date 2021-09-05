@@ -1,7 +1,7 @@
 <!-- prettier-ignore -->
 # Winestory
 
-### Clone pjoject
+### Clone project
 
 `git clone https://github.com/Bryndis-vefari/Winestory.git`
 
