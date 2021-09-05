@@ -3,15 +3,14 @@
   background-color: $black;
   display: flex;
   flex-wrap: nowrap;
-  height: 651px;
-  padding: 0 15px;
-  margin-top: 3em;
+  padding: 40px 15px;
+  margin-top: 4rem;
 
   @media screen and (min-width: 320px) {
-    padding: 0 calc(15px + (40 - 15) * ((100vw - 320px) / (1920 - 320)));
+    padding: 40px calc(15px + (120 - 15) * ((100vw - 320px) / (1440 - 320)));
   }
-  @media screen and (min-width: 1920px) {
-    padding: 0 40px;
+  @media screen and (min-width: 1440px) {
+    padding: 40px 120px;
   }
 
   &__left,
@@ -21,91 +20,84 @@
     width: 50%;
   }
 
-  h2 {
-    color: $white;
-    padding-bottom: 2rem;
-
-    span {
-      font-family: $font-light;
-    }
-  }
-
-  p {
-    color: $white;
-    padding-bottom: 2rem;
-    padding-right: 8rem;
-
-    span {
-      font-family: $font-light;
-    }
-  }
-
+  /* Left footer styles */
   &__left {
     display: flex;
     flex-direction: column;
     align-items: flex-start;
-    padding: 6rem 0rem 5rem;
+  }
 
-    .social {
-      display: inline-block;
-    }
+  &__logo a {
+    padding: 0;
+  }
+
+  &__page-links {
+    width: 100%;
+    display: inline-block;
 
     a {
       color: $white;
-      list-style-type: none;
-    }
 
-    li {
-      padding: 7px 10px;
-    }
-
-    /*
-    .social {
-      
-    
-
-      ul {
-        margin: 0;
-        padding: 0;
+      &:hover {
+        color: $accent-color_red;
       }
-
-      li {
-        padding: 7px 10px;
-
-        a {
-          color: $accent-color_yellow;
-          list-style-type: none;
-
-          &:before {
-            font-size: 2.2rem;
-          }
-
-          &:hover {
-            color: darken($accent-color_yellow, 15%);
-          }
-        }
-      }
-    }
-    */
-
-    .logo a {
-      padding: 0;
     }
   }
 
+  &__social {
+    display: inline;
+    width: 100%;
+
+    ul li {
+      display: inline-block;
+
+      a {
+        &:before {
+          font-size: 2.2rem;
+          color: $accent-color_yellow;
+          transition: all 0.3s ease-in-out;
+        }
+
+        &:hover::before {
+          color: $accent-color_red;
+        }
+      }
+    }
+  }
+
+  /* Right footer styles */
   &__right {
-    display: flex;
-    flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    padding: 6rem 0rem 5rem;
+
+    h2 {
+      color: $white;
+      padding-bottom: 2rem;
+
+      span {
+        font-family: $font-light;
+      }
+    }
+
+    p {
+      color: $white;
+
+      span {
+        font-family: $font-light;
+      }
+    }
 
     .textbox {
-      display: inline-block;
+      width: 100%;
+      display: block;
       margin: 4px 2px;
       padding: 15px 60px;
       color: $font-color_primary;
       font-size: 16px;
+    }
+
+    .btn {
+      transition: all 0.3s ease-in-out;
     }
   }
 }

@@ -2,32 +2,32 @@
 /* FONTS */
 @font-face {
   font-family: "ObjectSans-Thin";
-  src: url("/assets/fonts/object-sans/ObjectSans-Thin.eot");
-  src: url("/assets/fonts/object-sans/ObjectSans-Thin.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/object-sans/ObjectSans-Thin.woff2") format("woff2"), url("/assets/fonts/object-sans/ObjectSans-Thin.woff") format("woff"), url("/assets/fonts/object-sans/ObjectSans-Thin.ttf") format("truetype"), url("/assets/fonts/object-sans/ObjectSans-Thin.svg#ObjectSans-Thin") format("svg");
+  src: url("../../assets/fonts/object-sans/ObjectSans-Thin.eot");
+  src: url("../../assets/fonts/object-sans/ObjectSans-Thin.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/object-sans/ObjectSans-Thin.woff2") format("woff2"), url("../../assets/fonts/object-sans/ObjectSans-Thin.woff") format("woff"), url("../../assets/fonts/object-sans/ObjectSans-Thin.ttf") format("truetype"), url("../../assets/fonts/object-sans/ObjectSans-Thin.svg#ObjectSans-Thin") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "ObjectSans-Regular";
-  src: url("/assets/fonts/object-sans/ObjectSans-Regular.eot");
-  src: url("/assets/fonts/object-sans/ObjectSans-Regular.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/object-sans/ObjectSans-Regular.woff2") format("woff2"), url("/assets/fonts/object-sans/ObjectSans-Regular.woff") format("woff"), url("/assets/fonts/object-sans/ObjectSans-Regular.ttf") format("truetype"), url("/assets/fonts/object-sans/ObjectSans-Regular.svg#ObjectSans-Regular") format("svg");
+  src: url("../../assets/fonts/object-sans/ObjectSans-Regular.eot");
+  src: url("../../assets/fonts/object-sans/ObjectSans-Regular.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/object-sans/ObjectSans-Regular.woff2") format("woff2"), url("../../assets/fonts/object-sans/ObjectSans-Regular.woff") format("woff"), url("../../assets/fonts/object-sans/ObjectSans-Regular.ttf") format("truetype"), url("../../assets/fonts/object-sans/ObjectSans-Regular.svg#ObjectSans-Regular") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "ObjectSans-Bold";
-  src: url("/assets/fonts/object-sans/ObjectSans-Bold.eot");
-  src: url("/assets/fonts/object-sans/ObjectSans-Bold.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/object-sans/ObjectSans-Bold.woff2") format("woff2"), url("/assets/fonts/object-sans/ObjectSans-Bold.woff") format("woff"), url("/assets/fonts/object-sans/ObjectSans-Bold.ttf") format("truetype"), url("/assets/fonts/object-sans/ObjectSans-Bold.svg#ObjectSans-Bold") format("svg");
+  src: url("../../assets/fonts/object-sans/ObjectSans-Bold.eot");
+  src: url("../../assets/fonts/object-sans/ObjectSans-Bold.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/object-sans/ObjectSans-Bold.woff2") format("woff2"), url("../../assets/fonts/object-sans/ObjectSans-Bold.woff") format("woff"), url("../../assets/fonts/object-sans/ObjectSans-Bold.ttf") format("truetype"), url("../../assets/fonts/object-sans/ObjectSans-Bold.svg#ObjectSans-Bold") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
 }
 @font-face {
   font-family: "ObjectSans-Heavy";
-  src: url("/assets/fonts/object-sans/ObjectSans-Heavy.eot");
-  src: url("/assets/fonts/object-sans/ObjectSans-Heavy.eot?#iefix") format("embedded-opentype"), url("/assets/fonts/object-sans/ObjectSans-Heavy.woff2") format("woff2"), url("/assets/fonts/object-sans/ObjectSans-Heavy.woff") format("woff"), url("/assets/fonts/object-sans/ObjectSans-Heavy.ttf") format("truetype"), url("/assets/fonts/object-sans/ObjectSans-Heavy.svg#ObjectSans-Heavy") format("svg");
+  src: url("../../assets/fonts/object-sans/ObjectSans-Heavy.eot");
+  src: url("../../assets/fonts/object-sans/ObjectSans-Heavy.eot?#iefix") format("embedded-opentype"), url("../../assets/fonts/object-sans/ObjectSans-Heavy.woff2") format("woff2"), url("../../assets/fonts/object-sans/ObjectSans-Heavy.woff") format("woff"), url("../../assets/fonts/object-sans/ObjectSans-Heavy.ttf") format("truetype"), url("../../assets/fonts/object-sans/ObjectSans-Heavy.svg#ObjectSans-Heavy") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: swap;
@@ -35,8 +35,8 @@
 /* ICON FONTS */
 @font-face {
   font-family: "icomoon";
-  src: url("/assets/fonts/icon-fonts/icomoon.eot?lpuwsi");
-  src: url("/assets/fonts/icon-fonts/icomoon.eot?lpuwsi#iefix") format("embedded-opentype"), url("/assets/fonts/icon-fonts/icomoon.ttf?lpuwsi") format("truetype"), url("/assets/fonts/icon-fonts/icomoon.woff?lpuwsi") format("woff"), url("/assets/fonts/icon-fonts/icomoon.svg?lpuwsi#icomoon") format("svg");
+  src: url("../../assets/fonts/icon-fonts/icomoon.eot?lpuwsi");
+  src: url("../../assets/fonts/icon-fonts/icomoon.eot?lpuwsi#iefix") format("embedded-opentype"), url("../../assets/fonts/icon-fonts/icomoon.ttf?lpuwsi") format("truetype"), url("../../assets/fonts/icon-fonts/icomoon.woff?lpuwsi") format("woff"), url("../../assets/fonts/icon-fonts/icomoon.svg?lpuwsi#icomoon") format("svg");
   font-weight: normal;
   font-style: normal;
   font-display: block;
@@ -442,18 +442,19 @@ a {
   background-color: black;
   display: flex;
   flex-wrap: nowrap;
-  height: 651px;
-  padding: 0 15px;
-  margin-top: 3em;
+  padding: 40px 15px;
+  margin-top: 4rem;
+  /* Left footer styles */
+  /* Right footer styles */
 }
 @media screen and (min-width: 320px) {
   .footer {
-    padding: 0 calc(15px + (40 - 15) * ((100vw - 320px) / (1920 - 320)));
+    padding: 40px calc(15px + (120 - 15) * ((100vw - 320px) / (1440 - 320)));
   }
 }
-@media screen and (min-width: 1920px) {
+@media screen and (min-width: 1440px) {
   .footer {
-    padding: 0 40px;
+    padding: 40px 120px;
   }
 }
 .footer__left, .footer__right {
@@ -461,81 +462,66 @@ a {
   flex-direction: column;
   width: 50%;
 }
-.footer h2 {
-  color: white;
-  padding-bottom: 2rem;
-}
-.footer h2 span {
-  font-family: "ObjectSans-Thin";
-}
-.footer p {
-  color: white;
-  padding-bottom: 2rem;
-  padding-right: 8rem;
-}
-.footer p span {
-  font-family: "ObjectSans-Thin";
-}
 .footer__left {
   display: flex;
   flex-direction: column;
   align-items: flex-start;
-  padding: 6rem 0rem 5rem;
-  /*
-  .social {
-
-
-
-    ul {
-      margin: 0;
-      padding: 0;
-    }
-
-    li {
-      padding: 7px 10px;
-
-      a {
-        color: $accent-color_yellow;
-        list-style-type: none;
-
-        &:before {
-          font-size: 2.2rem;
-        }
-
-        &:hover {
-          color: darken($accent-color_yellow, 15%);
-        }
-      }
-    }
-  }
-  */
 }
-.footer__left .social {
-  display: inline-block;
-}
-.footer__left a {
-  color: white;
-  list-style-type: none;
-}
-.footer__left li {
-  padding: 7px 10px;
-}
-.footer__left .logo a {
+.footer__logo a {
   padding: 0;
 }
+.footer__page-links {
+  width: 100%;
+  display: inline-block;
+}
+.footer__page-links a {
+  color: white;
+}
+.footer__page-links a:hover {
+  color: #ee5353;
+}
+.footer__social {
+  display: inline;
+  width: 100%;
+}
+.footer__social ul li {
+  display: inline-block;
+}
+.footer__social ul li a:before {
+  font-size: 2.2rem;
+  color: #fdca6a;
+  transition: all 0.3s ease-in-out;
+}
+.footer__social ul li a:hover::before {
+  color: #ee5353;
+}
 .footer__right {
-  display: flex;
-  flex-direction: column;
   justify-content: center;
   align-items: flex-start;
-  padding: 6rem 0rem 5rem;
+}
+.footer__right h2 {
+  color: white;
+  padding-bottom: 2rem;
+}
+.footer__right h2 span {
+  font-family: "ObjectSans-Thin";
+}
+.footer__right p {
+  color: white;
+}
+.footer__right p span {
+  font-family: "ObjectSans-Thin";
 }
 .footer__right .textbox {
-  display: inline-block;
+  width: 100%;
+  display: block;
   margin: 4px 2px;
   padding: 15px 60px;
   color: #333333;
   font-size: 16px;
+}
+.footer__right .btn {
+  transition: all 0.3s ease-in-out;
 }
 
 /* SECTIONS */
@@ -546,8 +532,8 @@ a {
   align-items: flex-end;
   height: 100vh;
   width: 100%;
-  background-image: url("/assets/images/hero_image.jpg");
-  background-color: #cccccc;
+  background-image: url("../assets/images/hero_image.jpg");
+  background-color: #e0e0e0;
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
@@ -556,7 +542,7 @@ a {
 .hero h1 .small-text {
   position: absolute;
   bottom: 30%;
-  left: 0;
+  left: 20px;
   font-size: 25px;
   line-height: 1;
   font-family: "ObjectSans-Thin";
@@ -582,8 +568,8 @@ a {
 .headline-block::after {
   content: "";
   display: flex;
-  height: 2px;
-  background-color: black;
+  height: 1px;
+  background-color: #333333;
   width: 80%;
 }
 .headline-block h2 {
