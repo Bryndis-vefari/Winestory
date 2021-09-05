@@ -4,16 +4,17 @@
   justify-content: center;
   align-items: center;
   text-align: center;
+  padding: 8rem 0;
 
   h2 {
-    text-align: center;
-    padding-bottom: 4rem;
+    padding-bottom: 2rem;
     max-width: 800px;
+    font-family: $font-regular;
   }
 
   &__items {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     flex-wrap: wrap;
     justify-content: center;
   }
@@ -21,36 +22,47 @@
   &__item {
     display: flex;
     flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
+    flex: 1;
     padding: 3rem 2rem;
-    flex: 1 0;
-    font-size: 16px;
+    font-size: 1rem;
 
     &:nth-of-type(2) {
-      /* border-left: 2px solid $black;
-      border-right: 2px solid $black;*/
+      border-top: 1px solid $font-color_primary;
+      border-bottom: 1px solid $font-color_primary;
     }
   }
 
-  @media screen and (min-width: 768px) {
+  @media screen and (min-width: 1024px) {
+    h2 {
+      padding-bottom: 6rem;
+    }
     &__items {
-      flex-direction: column;
+      flex-direction: row;
+    }
+    &__item {
+      padding: 0rem 2rem;
+
+      &:nth-of-type(2) {
+        border: none;
+        border-left: 1px solid $font-color_primary;
+        border-right: 1px solid $font-color_primary;
+      }
     }
   }
 
   &__rating {
     padding-bottom: 1rem;
     align-self: center;
+    color: $font-color_primary;
 
     span {
       color: $accent-color_yellow;
     }
   }
-  s &__review {
+  &__review {
     font-size: 16px;
-    padding-bottom: 16px;
-    text-align: left;
+    padding-bottom: 1rem;
+    max-width: 360px;
   }
 
   &__person {
