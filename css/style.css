@@ -127,6 +127,7 @@ h1,
   color: white;
   font-size: 113px;
   line-height: 0.8;
+  /* Formula for scalable font-size (can also be used for margin and padding) */
 }
 @media screen and (min-width: 320px) {
   h1,
@@ -463,6 +464,7 @@ a {
   }
 }
 
+/* FOOTER */
 .footer {
   display: flex;
   flex-direction: column;
@@ -1105,7 +1107,5 @@ a {
     margin-left: 4rem;
   }
 }
-
-/* @import "components/marquee.scss";*/
 
 /*# sourceMappingURL=style.css.map */

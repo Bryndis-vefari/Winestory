@@ -11,6 +11,7 @@
 </head>
 
 <body>
+	<!-- HEADER starts -->
 	<header class="header">
 		<nav>
 			<div class="logo header__logo">
@@ -59,73 +60,71 @@
 			</div>
 		</div>
 	</header>
+	<!-- HEADER ends -->
 
+	<!-- MAIN CONTENT starts -->
 	<main>
+
+		<!-- HERO section -->
 		<section class="hero lazy" data-bg="./assets/images/hero_image.jpg">
 			<h1><span class="small-text">tailor your taste in </span>wine<span class="accent-color">.</span></h1>
 		</section>
 
 		<div class="page-wrap">
 
+			<!-- ARTICLE BLOCKS section -->
 			<section id='what' class="article-blocks">
 				<h2>discover wine <br> paired to your taste</h2>
 
+				<!-- ARTICLE BLOCKS item--1 -->
 				<article id='how' class="article-blocks__item item--1">
 					<div class="article-blocks__item__img">
 						<img alt="A glass of wine being swirled" class="lazy" src="./assets/images/wine-glass-swirl-10.jpg"
 							data-src="./assets/images/wine-glass-swirl.jpg" />
 					</div>
 					<div class="article-blocks__item__text">
-						<div class="marquee">
-							<div class="marquee__inner">
-								<h3>Try<span class="accent-color">.</span></h3>
-							</div>
-						</div>
+						<h3>Try<span class="accent-color">.</span></h3>
 						<p>Take our palate quiz to uncover your unique taste profile. Our team of wine explorers pair only the best
 							value bottles, for your budget, to your tastes.</p>
 					</div>
 				</article>
 
+				<!-- ARTICLE BLOCKS item--2 -->
 				<article class="article-blocks__item item--2">
 					<div class="article-blocks__item__img">
 						<img alt="Wine being poured into a glass" class="lazy" src="./assets/images/pouring-wine-10.jpg"
 							data-src="./assets/images/pouring-wine.jpg" />
 					</div>
 					<div class="article-blocks__item__text">
-						<div class="marquee">
-							<div class="marquee__inner">
-								<h3>Rate<span class="accent-color">.</span></h3>
-							</div>
-						</div>
+						<h3>Rate<span class="accent-color">.</span></h3>
 						<p>Our easy-to-use rating system uses your feedback to improve every future box you receive.</p>
 					</div>
 				</article>
 
+				<!-- ARTICLE BLOCKS item--3 -->
 				<article class="article-blocks__item item--3">
 					<div class="article-blocks__item__img">
 						<img alt="A collection of wine glasses with variations of wine" class="lazy"
 							src="./assets/images/wine-glasses-10.jpg" data-src="./assets/images/wine-glasses.jpg" />
 					</div>
 					<div class="article-blocks__item__text">
-						<div class="marquee">
-							<div class="marquee__inner">
-								<h3>Refine<span class="accent-color">.</span></h3>
-							</div>
-						</div>
+						<h3>Refine<span class="accent-color">.</span></h3>
 						<p>Every bottle you rate impoves your taste profile and our recommendations get even better each time.</p>
 					</div>
 				</article>
 			</section>
-			<!--CTA section-->
+
+			<!-- CTA section -->
 			<section class="cta-block">
 				<h2><span>write your</span> winestory.</h2>
 				<a class='btn btn--solid btn--accent' href="#">get started</a>
 			</section>
-			<!--Testimonials section-->
+
+			<!-- TESTIMONIALS section -->
 			<section id='testimonials' class='testimonial-blocks'>
 				<h2>what our <br />customers think</h2>
 				<div class='testimonial-blocks__items'>
-
+					<!-- TESTIMONIALS 1 -->
 					<article class='testimonial-blocks__item'>
 						<div class='testimonial-blocks__rating'>
 							<span class='icon-star-full'></span>
@@ -140,6 +139,8 @@
 						</p>
 						<p class="testimonial-blocks__person">Sophie Newport</p>
 					</article>
+
+					<!-- TESTIMONIALS 2 -->
 					<article class='testimonial-blocks__item'>
 						<div class='testimonial-blocks__rating'>
 							<span class='icon-star-full'></span>
@@ -154,6 +155,8 @@
 						</p>
 						<p class="testimonial-blocks__person">Philip Williams</p>
 					</article>
+
+					<!-- TESTIMONIALS 3 -->
 					<article class='testimonial-blocks__item'>
 						<div class='testimonial-blocks__rating'>
 							<span class='icon-star-full'></span>
@@ -171,7 +174,8 @@
 				</div>
 			</section>
 		</div>
-		<!--Top wines section-->
+
+		<!--PRODUCT-BLOCK section-->
 		<section class="product-block">
 			<article class="product-block__item">
 				<div class="product-block__item__img">
@@ -186,8 +190,9 @@
 				</div>
 			</article>
 		</section>
-
 	</main>
+	<!-- MAIN content ends -->
+	<!-- FOOTER starts-->
 	<footer class="footer">
 		<div class="logo footer__logo">
 			<a href="/">
@@ -201,8 +206,8 @@
 				</svg>
 			</a>
 		</div>
+		<!-- FOOTER NAVIGATION and SOCIAL LINKS-->
 		<div class="footer__navigation">
-
 			<div class="footer__page-links">
 				<ul>
 					<li><a href="#" class="link footer__right">what we do</a></li>
@@ -217,19 +222,19 @@
 				<a href="#" class="icon-social-media_twitter_icon"><span class="visually-hidden">twitter</span></a>
 			</div>
 		</div>
-
+		<!-- FOOTER SUBSCRIPTION -->
 		<div class="footer__subscription">
 			<h4>Subscribe</h4>
 			<p>Subscribe to receive information, access to exclusive deals, and more.</p>
 			<input class="textbox" type="text" placeholder="enter your email address">
 			<input class='btn btn--solid btn--accent' type="submit" value="subscribe">
 		</div>
-
 	</footer>
+	<!-- FOOTER ends-->
 
+	<!-- JS Lazyload for images -->
 	<script async src="https://cdn.jsdelivr.net/npm/vanilla-lazyload@17.4.0/dist/lazyload.min.js"></script>
 	<script src="./js/scripts.js" type="text/javascript"></script>
-
 </body>
 
 </html>
